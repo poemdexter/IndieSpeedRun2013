@@ -4,6 +4,7 @@ using System.Collections;
 public class ThrowableObject : MonoBehaviour {
 	
 	public Vector2 throwVector = Vector2.zero;
+	public float throwRotation = 200;
 	private bool thrown = false;
 	
 	void Start()
@@ -24,6 +25,8 @@ public class ThrowableObject : MonoBehaviour {
 			thrown = true;
 			// throw yourself
 			rigidbody.AddForce(throwVector);
+			rigidbody.AddTorque(new Vector3(0,0,throwRotation));
+			rigidbody.useGravity = true;
 		}
 	}
 	
