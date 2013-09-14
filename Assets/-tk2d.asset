@@ -720,6 +720,7 @@ MonoBehaviour:
     - king run0003
     - king run0004
     - dragon_temp
+    - stonewall
     spriteTextureGUIDs:
     - 675ab298e1a2968469351a3c1b1e9800
     - 2b62706120bf85b4a98c92af3ad644ab
@@ -741,6 +742,7 @@ MonoBehaviour:
     - efad24eccd41e3441a1df8b0ea31cee7
     - fd0abe2e81f53134aaa95614228a9a41
     - ce128cc20f106354397fe6dedfe9b19d
+    - f5c51eed1a3c8624fa45c9a581cb32ff
     spriteTextureTimeStamps:
     - 1373033334
     - 1373665385
@@ -762,6 +764,7 @@ MonoBehaviour:
     - 1379150997.43274
     - 1379150997.43574
     - 1379151211.8418
+    - 1379149025
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -772,9 +775,9 @@ MonoBehaviour:
     spriteNames:
     - dragon
     spriteTextureGUIDs:
-    - 9395f11ab90a43f47ab84a52a390d481
+    - 98993160c2b2a244d995b99a5374b655
     spriteTextureTimeStamps:
-    - 1379153626.46025
+    - 1379159726.21269
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

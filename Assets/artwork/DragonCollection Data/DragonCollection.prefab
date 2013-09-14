@@ -65,7 +65,7 @@ MonoBehaviour:
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 210b6e0557fac904aaf5e8a0b3ad6c96, type: 2}
     materialId: 0
-    sourceTextureGUID: 9395f11ab90a43f47ab84a52a390d481
+    sourceTextureGUID: 98993160c2b2a244d995b99a5374b655
     extractRegion: 0
     regionX: 0
     regionY: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 10
-  buildKey: 1965040683
+  buildKey: 1146873525
   dataGuid: 65ac584244461304ea5de126463d448e
   managedSpriteCollection: 0
   hasPlatformData: 0
