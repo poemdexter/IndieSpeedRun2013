@@ -59,6 +59,16 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		moveDirection = new Vector2(currentSpeed, 0); // gotta go fast (to the right)
 		
+		if (isStumbling)
+		{
+			if (currentSpeed < runSpeed) currentSpeed += recoverSpeed;
+			else
+			{
+				currentSpeed = runSpeed; // stop us from overshooting max speed
+				isStumbling = false;
+			}
+		}
+		
 		// we're on the ground and hit spacebar
 		if (isGrounded && Input.GetKeyDown(KeyCode.Z))
 		{
