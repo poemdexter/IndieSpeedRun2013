@@ -11,15 +11,30 @@ public class ThrowableObject : MonoBehaviour {
 	public Vector2 throwVector = new Vector2(-300, 400);
 	public float throwRotation = 200;
 	public bool thrown = false;
+	private tk2dSprite pointer;
+	private Vector3 pointerVector = new Vector3(0,0.1f,0);
 	
 	void Start()
 	{
-		
+		// set pointer's renderlayer to the same as its parent
+		pointer = transform.FindChild("Pointer").GetComponent<tk2dSprite>();
+		pointer.RenderLayer = GetComponent<tk2dSprite>().RenderLayer;
 	}
 	
 	void Update()
 	{
-		
+		// animate pointer
+		if(pointer)
+		{
+			if(pointer.transform.position.y > -0.3)
+			{
+				pointerVector = new Vector3(0,-0.1f,0);
+			}
+			if(pointer.transform.position.y < -1){
+				pointerVector = new Vector3(0,0.1f,0);
+			}
+			pointer.transform.Translate(pointerVector);
+		}
 	}
 	
 	// called by Player when this object is thrown
@@ -34,6 +49,7 @@ public class ThrowableObject : MonoBehaviour {
 			rigidbody.AddForce(throwVector);
 			rigidbody.AddTorque(new Vector3(0,0,throwRotation));
 			rigidbody.useGravity = true;									// necessary to make object throw more nicely
+			DestroyObject(pointer);
 		}
 	}
 	

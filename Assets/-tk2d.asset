@@ -58,6 +58,14 @@ MonoBehaviour:
     dataGUID: cb3bf0ad5e92744d6856da9a7d5a3125
     managed: 0
     loadable: 0
+  - assetGUID: 9eeaa65e4e387df4fb06fd15b4a52536
+    dataGUID: fa0d947d2965f084bb6d369be71fba68
+    managed: 0
+    loadable: 0
+  - assetGUID: 691c78922a595bf4c97ced4963703165
+    dataGUID: 0b34412c82fe2b948ba15185538ddf3f
+    managed: 0
+    loadable: 0
   spriteCollectionIndex:
   - name: DemoSpiderSpriteCollection
     spriteCollectionGUID: 1fe2f34d6bac2b440944f04ac87d9e8a
@@ -720,6 +728,7 @@ MonoBehaviour:
     - king run0003
     - king run0004
     - dragon_temp
+    - stonewall
     spriteTextureGUIDs:
     - 675ab298e1a2968469351a3c1b1e9800
     - 2b62706120bf85b4a98c92af3ad644ab
@@ -741,6 +750,7 @@ MonoBehaviour:
     - efad24eccd41e3441a1df8b0ea31cee7
     - fd0abe2e81f53134aaa95614228a9a41
     - ce128cc20f106354397fe6dedfe9b19d
+    - f5c51eed1a3c8624fa45c9a581cb32ff
     spriteTextureTimeStamps:
     - 1373033334
     - 1373665385
@@ -762,6 +772,7 @@ MonoBehaviour:
     - 1379150997.43274
     - 1379150997.43574
     - 1379151211.8418
+    - 1379149025
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -772,9 +783,9 @@ MonoBehaviour:
     spriteNames:
     - dragon
     spriteTextureGUIDs:
-    - 9395f11ab90a43f47ab84a52a390d481
+    - 6bdfdba1e10b35b4db4cc77afd1b303a
     spriteTextureTimeStamps:
-    - 1379153626.46025
+    - 1379159832.80815
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

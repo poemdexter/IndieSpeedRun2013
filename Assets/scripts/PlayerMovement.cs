@@ -116,7 +116,6 @@ public class PlayerMovement : MonoBehaviour {
 		// we hit an obstacle here and need to slow down
 		if(collider.gameObject.CompareTag("Obstacle"))
 		{
-			Debug.Log("hitobj");
 			currentSpeed -= stumbleSpeed; // we need to slow our speed
 			isStumbling = true; // and flag as stumbling so we can recover
 		}
