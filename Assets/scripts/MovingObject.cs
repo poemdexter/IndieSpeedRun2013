@@ -1,29 +1,40 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour {
+/*
+ * Allows an object to move similarly to the way the player does.
+ * Makes objects look like they're "fleeing" as well.
+ * Takes care of necessary constraints/gravity so the object moves normally.
+ */
+
+public class MovingObject : MonoBehaviour {
 	
-	public float currentSpeed = 10.0f;
-	public float runSpeed = 10.0f;
+	public float currentSpeed = 4.0f;
+	public float runSpeed = 4.0f;
 	public float jumpSpeed = 5.0f;
-	public float stumbleSpeed = 5.0f;
-	public float recoverSpeed = 0.1f;
 	public float gravity = -0.1f;
 	public float currentGravity = 0;
 	
 	public bool isGrounded = false;
 	public bool isJumping = false;
 	public bool inAir = false;
-	public bool isHit = false;
-	public bool isStumbling = false;
-	public bool isThrowing = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
 	
+	void Start()
+	{
+		//Necessary to keep object "flat" and keep gravity working properly, otherwise object's "down" changes
+		rigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ;
+	}
+	
+	void Update()
+	{
+	
+	}
+	
 	void FixedUpdate()
 	{
-		
 		if (IsGrounded())
 		{
 			isGrounded = true;
@@ -36,36 +47,20 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			inAir = true;
 			isGrounded = false;
-			isThrowing = false;		// no throwing while jumping
 			currentGravity = gravity;
 		}
 		
-		CalculateMoveDirection();
+		if(!rigidbody.useGravity)	//Necessary to make throwable objects look nicer
+		{
+			CalculateMoveDirection();
+		}
 	}
 	
-	void Update()
-	{
-		if(isGrounded && Input.GetKeyDown(KeyCode.X))	// is throwing if key pressed while on ground
-		{
-			isThrowing = true;
-		}
-		else
-		{
-			isThrowing = false;
-		}
-	}
+	// this is an object that is moving (possibly jumping?) like the player does
 	
 	void CalculateMoveDirection()
 	{
 		moveDirection = new Vector2(currentSpeed, 0); // gotta go fast (to the right)
-		
-		// we're on the ground and hit spacebar
-		if (isGrounded && Input.GetKeyDown(KeyCode.Z))
-		{
-			isJumping = true;
-			isGrounded = false;
-			jumpDirection += new Vector2(0, jumpSpeed);
-		}
 		
 		// we're moving vertically, start applying gravity
 		if (isJumping || inAir)
@@ -91,25 +86,5 @@ public class PlayerMovement : MonoBehaviour {
 			}
 		}
 		return false;
-	}
-	
-	void OnCollisionEnter(Collision collision)
-	{
-		// we hit an obstacle here
-		if(collision.collider.CompareTag("Obstacle"))
-		{
-			currentSpeed -= stumbleSpeed; // we need to slow our speed
-			isStumbling = true; // and flag as stumbling so we can recover
-		}
-		
-	}
-	
-	void OnCollisionStay(Collision collision)
-	{
-		// we are colliding with a throwable object and happen to be throwing, tell the object to get thrown
-		if(collision.collider.CompareTag("Throwable") && isThrowing)
-		{
-			collision.collider.gameObject.GetComponent<ThrowableObject>().Throw();
-		}
 	}
 }

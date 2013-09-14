@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * Allows an object to be thrown by the player and takes care of changing
+ * constraints and gravity to make the throw use regular physics.
+ */
+
 public class ThrowableObject : MonoBehaviour {
 	
-	public Vector2 throwVector = Vector2.zero;
+	public Vector2 throwVector = new Vector2(-300, 400);
 	public float throwRotation = 200;
 	private bool thrown = false;
 	
@@ -22,11 +27,12 @@ public class ThrowableObject : MonoBehaviour {
 	{
 		if(!thrown)
 		{
-			thrown = true;
 			// throw yourself
+			thrown = true;
+			rigidbody.constraints = RigidbodyConstraints.FreezePositionZ;	// necessary to make object rotate when thrown
 			rigidbody.AddForce(throwVector);
 			rigidbody.AddTorque(new Vector3(0,0,throwRotation));
-			rigidbody.useGravity = true;
+			rigidbody.useGravity = true;									// necessary to make object throw more nicely
 		}
 	}
 	
@@ -34,4 +40,5 @@ public class ThrowableObject : MonoBehaviour {
 	{
 		return thrown;
 	}
+
 }
