@@ -3,31 +3,72 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 	
-	public float speed = 10.0f;
-	public float jumpPower = 25.0f;
+	public float speed = 5.0f;
+	public float jumpSpeed = 5.0f;
+	public float gravity = -.1f;
+	public float currentGravity = 0;
 	
-	// Use this for initialization
-	void Start () {
+	public bool isGrounded = false;
+	public bool isJumping = false;
+	public bool inAir = false;
 	
+	public Vector2 moveDirection = Vector2.zero;
+	public Vector2 jumpDirection = Vector2.zero;
+	
+	void FixedUpdate () {
+		
+		if (IsGrounded())
+		{
+			isGrounded = true;
+			isJumping = false;
+			inAir = false;
+			currentGravity = 0;
+			jumpDirection = Vector2.zero;
+		}
+		else if (!inAir) // first frame of jump
+		{
+			inAir = true;
+			isGrounded = false;
+			currentGravity = gravity;
+		}
+		
+		CalculateMoveDirection();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void CalculateMoveDirection()
+	{
+		moveDirection = new Vector2(speed, 0); // gotta go fast (to the right)
 		
-		ConstantForce constantForce = new ConstantForce();
-		constantForce.force = new Vector3(speed,0,0);
+		// we're on the ground and hit spacebar
+		if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+		{
+			isJumping = true;
+			isGrounded = false;
+			jumpDirection += new Vector2(0, jumpSpeed);
+		}
 		
-		rigidbody.constantForce = constantForce;
-//		
-//		Vector3 move = Vector3.zero;
-//		
-//		if (Input.GetKeyDown(KeyCode.Space))
-//		{
-//			move += new Vector3(0, jumpPower, 0);
-//		}
-//
-//		move += new Vector3(speed, 0, 0);
-//		
-//		transform.Translate(move * Time.deltaTime);
+		// we're moving vertically, start applying gravity
+		if (isJumping || inAir)
+		{
+			jumpDirection += new Vector2(0, currentGravity);
+			moveDirection += jumpDirection;
+		}
+		
+		transform.Translate(moveDirection * Time.deltaTime);
+	}
+	
+	bool IsGrounded()
+	{
+		Ray ray = new Ray(transform.position, Vector3.down);
+		RaycastHit hit;
+		if (Physics.Raycast(ray, out hit, collider.bounds.extents.y + .1f))
+		{
+			if (hit.collider.gameObject.CompareTag("Ground"))
+			{
+				transform.position = new Vector3(transform.position.x, hit.point.y + collider.bounds.extents.y, 0);
+				return true;
+			}
+		}
+		return false;
 	}
 }
