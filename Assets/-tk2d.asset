@@ -25,6 +25,10 @@ MonoBehaviour:
     dataGUID: 
     managed: 0
     loadable: 0
+  - assetGUID: 750e38f2a813bbf479215a554b779af6
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -700,19 +704,61 @@ MonoBehaviour:
     - rogue_stand
     - enemy_still
     - chest_close
-    - dragon_temp
+    - ground_green
+    - ground_yellow
+    - rogue_walk2
+    - king run0006
+    - king run0008
+    - king run0010
+    - king run0005
+    - king run0001
+    - king run0007
+    - king run0002
+    - king run0011
+    - king run0012
+    - king run0009
+    - king run0003
+    - king run0004
     spriteTextureGUIDs:
     - 675ab298e1a2968469351a3c1b1e9800
     - 2b62706120bf85b4a98c92af3ad644ab
     - 2dad0f6f96f3adb45a34699179e6ae09
     - b9b18f23cf4478e4e9b2a951b81e9964
-    - ce128cc20f106354397fe6dedfe9b19d
+    - 1b97a7f3c867620478251e696c2b1a57
+    - a60f564d3966ded41a8827ac09f54b58
+    - 0b1d708049e46b943a51647efc57c3a1
+    - 016415ec2c2435a44aba753c7649a622
+    - 3710b447d40ee8d44982783a103367c9
+    - 6f97487fbb6df7f4eb173bf41e47be8d
+    - 7067c75e83c72b54b914cf44fbe4d064
+    - 725930a5933458a4a8536b240b3d26cb
+    - 8957a10062bc151498203fa2c55b82e7
+    - 9d111d94fe607ba47b012f7fff49e775
+    - bf4ba4cdf0149ba4abef616ac2332875
+    - decc438fcf7e31343b3f0107f2381f0c
+    - e5f2ec752ada5cc4ba4497da0deb471f
+    - efad24eccd41e3441a1df8b0ea31cee7
+    - fd0abe2e81f53134aaa95614228a9a41
     spriteTextureTimeStamps:
-    - 1379109172.63877
-    - 1379109172.64277
-    - 1379112962.99657
-    - 1379112962.99056
-    - 1379114872.47978
+    - 1373033334
+    - 1373665385
+    - 1373043284
+    - 1373659197
+    - 1373033236
+    - 1373033270
+    - 1373665418
+    - 1379130563
+    - 1379130563
+    - 1379130563
+    - 1379130563
+    - 1379130562
+    - 1379130563
+    - 1379130562
+    - 1379130564
+    - 1379130564
+    - 1379130563
+    - 1379130563
+    - 1379130563
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
