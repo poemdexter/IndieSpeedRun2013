@@ -10,7 +10,7 @@ public class ThrowableObject : MonoBehaviour {
 	
 	public Vector2 throwVector = new Vector2(-300, 400);
 	public float throwRotation = 200;
-	private bool thrown = false;
+	public bool thrown = false;
 	
 	void Start()
 	{

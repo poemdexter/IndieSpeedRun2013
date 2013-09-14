@@ -5,26 +5,42 @@ public class DragonBehavior : MonoBehaviour {
 	public float currentSpeed = 13.0f;	//current speed
 	public float normalSpeed = 13.0f;	//normal speed
 	public float minSpeed = 7.0f;		//absolute minimum speed
-	public float speedDecrement = 0.5f; //rate at which speed is decremented.
-	public float speedIncrement = 0.5f; //rate at which the speed increases after decrement
+	public float speedDecrement = 5.0f; //rate at which speed is decremented.
+	public float speedIncrement = 0.1f; //rate at which the speed increases after decrement
 	
 	public bool isHit = false;
+	public bool eatKing = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	
 	void FixedUpdate (){
 		
+		
+		calculateMoveRate();
+	}
+	
+	void calculateMoveRate() {
 		moveDirection = new Vector2(currentSpeed, 0);
 		
 		//Check if speed == normalSpeed, if not then slowly increase speed until speed = normal speed
-		if (currentSpeed < normalSpeed)
+		if(isHit){
+			currentSpeed = (currentSpeed - speedDecrement < minSpeed) ? minSpeed : currentSpeed - speedDecrement;
+			isHit = false;
+				
+		}
+		
+		if(!isHit && currentSpeed < normalSpeed){
 			currentSpeed = currentSpeed + speedIncrement;
-		else
-			currentSpeed = normalSpeed;
+			Debug.Log("speed up sucka");
+		}
+			
 		
 		
+		
+		//move dragon
 		transform.Translate(moveDirection * Time.deltaTime);
 	}
+	
 	
 	void reduceSpeed() {
 		//called when collision happens.
@@ -34,4 +50,23 @@ public class DragonBehavior : MonoBehaviour {
 			currentSpeed = minSpeed;
 	}
 	
+	void OnTriggerEnter(Collider collider){
+		// we hit an obstacle here and need to slow down
+		
+		if(collider.gameObject.CompareTag("Throwable") && collider.gameObject.GetComponent<ThrowableObject>().hasBeenThrown())
+		{
+//			Debug.Log("obj hit dragon");
+			isHit = true;
+			Destroy(collider.gameObject);
+		}
+		
+		if(collider.gameObject.CompareTag("Player")) {
+			eatKing = true;
+			Debug.Log("I eat king!");
+		}
+	}
+	
+	public bool canEatKing() {
+		return eatKing;
+	}
 }
