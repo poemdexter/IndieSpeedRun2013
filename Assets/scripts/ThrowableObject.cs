@@ -29,6 +29,7 @@ public class ThrowableObject : MonoBehaviour {
 		{
 			// throw yourself
 			thrown = true;
+			rigidbody.isKinematic = false;
 			rigidbody.constraints = RigidbodyConstraints.FreezePositionZ;	// necessary to make object rotate when thrown
 			rigidbody.AddForce(throwVector);
 			rigidbody.AddTorque(new Vector3(0,0,throwRotation));

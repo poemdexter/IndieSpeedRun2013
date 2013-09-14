@@ -105,7 +105,11 @@ public class PlayerMovement : MonoBehaviour {
 	
 	void OnTriggerStay(Collider collider)
 	{
-		Debug.Log(collider.gameObject.name);
+		// we are colliding with a throwable object and happen to be throwing, tell the object to get thrown
+		if(collider.CompareTag("Throwable") && isThrowing)
+		{
+			collider.gameObject.GetComponent<ThrowableObject>().Throw();
+		}
 	}
 	
 	void OnCollisionEnter(Collision collision)
@@ -117,19 +121,6 @@ public class PlayerMovement : MonoBehaviour {
 			isStumbling = true; // and flag as stumbling so we can recover
 		}
 		
-	}
-	
-	void OnCollisionStay(Collision collision)
-	{
-		if (collision.collider.CompareTag("Throwable"))
-		{
-			//Debug.Log("heh");
-		}
-		// we are colliding with a throwable object and happen to be throwing, tell the object to get thrown
-		if(collision.collider.CompareTag("Throwable") && isThrowing)
-		{
-			collision.collider.gameObject.GetComponent<ThrowableObject>().Throw();
-		}
 	}
 	
 	// return values match animation clip names
