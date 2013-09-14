@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 	public float speed = 5.0f;
 	public float jumpSpeed = 5.0f;
+	public float stumbleSpeed = 5.0f;
 	public float gravity = -.1f;
 	public float currentGravity = 0;
 	
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 	public bool isJumping = false;
 	public bool inAir = false;
 	public bool isHit = false;
+	public bool isStumbling = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
@@ -79,7 +81,8 @@ public class PlayerMovement : MonoBehaviour {
 		// we hit an obstacle here
 		if(collision.collider.CompareTag("Obstacle"))
 		{
-			// we need to slow our speed
+			speed -= stumbleSpeed; // we need to slow our speed
+			isStumbling = true; // and flag as stumbling so we can recover
 		}
 	}
 }
