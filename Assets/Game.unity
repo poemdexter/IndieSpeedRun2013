@@ -935,17 +935,17 @@ MonoBehaviour:
   lineSpacing: 0
   data:
     version: 1
-    font: {fileID: 11400000, guid: e7a6b09a73c6b2b4f8060096ddbd3b5e, type: 2}
-    text: X to throw
-    color: {r: 1, g: 1, b: 1, a: 1}
-    color2: {r: 1, g: 1, b: 1, a: 1}
-    useGradient: 0
+    font: {fileID: 11400000, guid: fb1b97eccf6db514999d1605baf017e5, type: 2}
+    text: Z to jump    X to throw
+    color: {r: .119593427, g: .580882311, b: .351828605, a: 1}
+    color2: {r: 0, g: 1, b: .0891366005, a: 1}
+    useGradient: 1
     textureGradient: 3
     anchor: 4
     renderLayer: 0
     scale: {x: 1, y: 1, z: 1}
     kerning: 0
-    maxChars: 16
+    maxChars: 23
     inlineStyling: 0
     formatting: 0
     wordWrapWidth: 0
@@ -963,7 +963,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 4f7adb5944587434eb05c98ae8cf0936, type: 2}
+  - {fileID: 2100000, guid: c588c2d12d3f5514195827aeb65feb8a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -983,7 +983,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089862408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.49079514, z: 10}
+  m_LocalPosition: {x: 0, y: -4.62982941, z: 10}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1541486875}
