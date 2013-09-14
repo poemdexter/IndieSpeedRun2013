@@ -44,28 +44,28 @@ MonoBehaviour:
   spriteDefinitions:
   - name: dragon
     boundsData:
-    - {x: 0, y: -.0249996185, z: 0}
-    - {x: 77.3000031, y: 45.8500023, z: 0}
+    - {x: -1.25, y: .200000763, z: 0}
+    - {x: 74.8000031, y: 45.4000015, z: 0}
     untrimmedBoundsData:
     - {x: 0, y: -.0249996185, z: 0}
     - {x: 77.3000031, y: 45.8500023, z: 0}
     texelSize: {x: .0500000007, y: .0500000007}
     positions:
-    - {x: -38.6500015, y: -22.9500008, z: 0}
-    - {x: 38.6500015, y: -22.9500008, z: 0}
+    - {x: -38.6500015, y: -22.5, z: 0}
+    - {x: 36.1500015, y: -22.5, z: 0}
     - {x: -38.6500015, y: 22.9000015, z: 0}
-    - {x: 38.6500015, y: 22.9000015, z: 0}
+    - {x: 36.1500015, y: 22.9000015, z: 0}
     normals: []
     tangents: []
     uvs:
     - {x: .00195410149, y: .000977050746}
-    - {x: .00195410149, y: .755858898}
-    - {x: .897459984, y: .000977050746}
-    - {x: .897459984, y: .755858898}
+    - {x: .00195410149, y: .731444836}
+    - {x: .888670921, y: .000977050746}
+    - {x: .888670921, y: .731444836}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 210b6e0557fac904aaf5e8a0b3ad6c96, type: 2}
     materialId: 0
-    sourceTextureGUID: 98993160c2b2a244d995b99a5374b655
+    sourceTextureGUID: 6bdfdba1e10b35b4db4cc77afd1b303a
     extractRegion: 0
     regionX: 0
     regionY: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 10
-  buildKey: 1146873525
+  buildKey: 1427150110
   dataGuid: 65ac584244461304ea5de126463d448e
   managedSpriteCollection: 0
   hasPlatformData: 0

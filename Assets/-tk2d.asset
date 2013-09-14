@@ -775,9 +775,9 @@ MonoBehaviour:
     spriteNames:
     - dragon
     spriteTextureGUIDs:
-    - 98993160c2b2a244d995b99a5374b655
+    - 6bdfdba1e10b35b4db4cc77afd1b303a
     spriteTextureTimeStamps:
-    - 1379159726.21269
+    - 1379159832.80815
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
