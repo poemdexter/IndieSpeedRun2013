@@ -137,6 +137,10 @@ Prefab:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: renderLayer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 496986756}
@@ -227,7 +231,7 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
+  renderLayer: 15
 --- !u!23 &48145945
 Renderer:
   m_ObjectHideFlags: 0
@@ -372,7 +376,7 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
+  renderLayer: 15
 --- !u!23 &58014273
 Renderer:
   m_ObjectHideFlags: 0
@@ -597,7 +601,7 @@ Transform:
   m_PrefabInternal: {fileID: 1157094324}
   m_GameObject: {fileID: 406042252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.55325747, y: -2.43999982, z: 0}
+  m_LocalPosition: {x: 3.57882142, y: -2.43999982, z: 0}
   m_LocalScale: {x: .300000012, y: .300000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -697,18 +701,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   cameraSettings:
+    clearFlags: 2
+    backgroundColor: {r: .192156866, g: .301960796, b: .474509805, a: 1}
+    cullingMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
     projection: 0
+    transparencySortMode: 2
     orthographicSize: 10
     orthographicPixelsPerMeter: 20
     orthographicOrigin: 1
     orthographicType: 0
     fieldOfView: 60
+    nearClipPlane: .300000012
+    farClipPlane: 50
     rect:
       serializedVersion: 2
       x: 0
       y: 0
       width: 1
       height: 1
+    depth: 0
+    renderingPath: -1
+    targetTexture: {fileID: 0}
+    hdr: 0
   resolutionOverride:
   - name: Override
     matchBy: 2
@@ -876,7 +892,7 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
+  renderLayer: 5
 --- !u!23 &496986762
 Renderer:
   m_ObjectHideFlags: 0
@@ -974,6 +990,10 @@ Prefab:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: renderLayer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 48145940}
@@ -1018,7 +1038,7 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
+  renderLayer: 1
 --- !u!33 &687768292
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1239,7 +1259,7 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
+  renderLayer: 15
 --- !u!23 &841883379
 Renderer:
   m_ObjectHideFlags: 0
@@ -1385,7 +1405,7 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
+  renderLayer: 5
 --- !u!23 &846751581
 Renderer:
   m_ObjectHideFlags: 0
@@ -1479,6 +1499,10 @@ Prefab:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: renderLayer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 846751575}
@@ -1539,6 +1563,10 @@ Prefab:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 20abffe0c8505134f8ff73de9151497f, type: 2}
+      propertyPath: renderLayer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20abffe0c8505134f8ff73de9151497f, type: 2}
   m_RootGameObject: {fileID: 58014268}
@@ -1553,7 +1581,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: dd1d5c79d6be1ce4ca108e1f6670bd96, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.55325747
+      value: 3.57882142
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd1d5c79d6be1ce4ca108e1f6670bd96, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1651,6 +1679,10 @@ Prefab:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: renderLayer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 2002679585}
@@ -1714,6 +1746,10 @@ Prefab:
     - target: {fileID: 100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: renderLayer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
@@ -1779,6 +1815,10 @@ Prefab:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: renderLayer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 1931971953}
@@ -1822,6 +1862,10 @@ Prefab:
     - target: {fileID: 3300000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
+      propertyPath: renderLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
@@ -1935,7 +1979,7 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
+  renderLayer: 15
 --- !u!23 &1931971959
 Renderer:
   m_ObjectHideFlags: 0
@@ -2081,7 +2125,7 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
+  renderLayer: 5
 --- !u!23 &2002679591
 Renderer:
   m_ObjectHideFlags: 0
@@ -2162,7 +2206,7 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
+  renderLayer: 10
 --- !u!23 &2069652155
 Renderer:
   m_ObjectHideFlags: 0
