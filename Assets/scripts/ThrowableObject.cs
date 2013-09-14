@@ -3,8 +3,7 @@ using System.Collections;
 
 public class ThrowableObject : MonoBehaviour {
 	
-	public float throwSpeed = 400;
-	
+	public Vector2 throwVector = Vector2.zero;
 	private bool thrown = false;
 	
 	void Start()
@@ -24,7 +23,7 @@ public class ThrowableObject : MonoBehaviour {
 		{
 			thrown = true;
 			// throw yourself
-			rigidbody.AddForce(new Vector2(0,throwSpeed));
+			rigidbody.AddForce(throwVector);
 		}
 	}
 	
