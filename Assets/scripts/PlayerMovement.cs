@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-		
 		if (IsGrounded())
 		{
 			isGrounded = true;
@@ -105,30 +104,21 @@ public class PlayerMovement : MonoBehaviour {
 	
 	void OnTriggerStay(Collider collider)
 	{
-		Debug.Log(collider.gameObject.name);
+		// we are colliding with a throwable object and happen to be throwing, tell the object to get thrown
+		if(collider.CompareTag("Throwable") && isThrowing)
+		{
+			collider.gameObject.GetComponent<ThrowableObject>().Throw();
+		}
 	}
 	
-	void OnCollisionEnter(Collision collision)
+	void OnTriggerEnter(Collider collider)
 	{
-		// we hit an obstacle here
-		if(collision.collider.CompareTag("Obstacle"))
+		// we hit an obstacle here and need to slow down
+		if(collider.gameObject.CompareTag("Obstacle"))
 		{
+			Debug.Log("hitobj");
 			currentSpeed -= stumbleSpeed; // we need to slow our speed
 			isStumbling = true; // and flag as stumbling so we can recover
-		}
-		
-	}
-	
-	void OnCollisionStay(Collision collision)
-	{
-		if (collision.collider.CompareTag("Throwable"))
-		{
-			//Debug.Log("heh");
-		}
-		// we are colliding with a throwable object and happen to be throwing, tell the object to get thrown
-		if(collision.collider.CompareTag("Throwable") && isThrowing)
-		{
-			collision.collider.gameObject.GetComponent<ThrowableObject>().Throw();
 		}
 	}
 	
