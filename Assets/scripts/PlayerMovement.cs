@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-		
 		if (IsGrounded())
 		{
 			isGrounded = true;
@@ -112,15 +111,15 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 	
-	void OnCollisionEnter(Collision collision)
+	void OnTriggerEnter(Collider collider)
 	{
-		// we hit an obstacle here
-		if(collision.collider.CompareTag("Obstacle"))
+		// we hit an obstacle here and need to slow down
+		if(collider.gameObject.CompareTag("Obstacle"))
 		{
+			Debug.Log("hitobj");
 			currentSpeed -= stumbleSpeed; // we need to slow our speed
 			isStumbling = true; // and flag as stumbling so we can recover
 		}
-		
 	}
 	
 	// return values match animation clip names

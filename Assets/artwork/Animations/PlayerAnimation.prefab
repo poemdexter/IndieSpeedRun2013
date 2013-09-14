@@ -233,35 +233,35 @@ MonoBehaviour:
     frames:
     - spriteCollection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d,
         type: 2}
-      spriteId: 1
+      spriteId: 15
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d,
         type: 2}
-      spriteId: 1
+      spriteId: 15
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d,
         type: 2}
-      spriteId: 1
+      spriteId: 15
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d,
         type: 2}
-      spriteId: 1
+      spriteId: 15
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d,
         type: 2}
-      spriteId: 1
+      spriteId: 15
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
@@ -301,7 +301,7 @@ MonoBehaviour:
     frames:
     - spriteCollection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d,
         type: 2}
-      spriteId: 4
+      spriteId: 9
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
