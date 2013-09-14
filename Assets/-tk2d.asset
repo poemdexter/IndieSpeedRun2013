@@ -698,12 +698,18 @@ MonoBehaviour:
     spriteNames:
     - player_still
     - rogue_stand
+    - enemy_still
+    - chest_close
     spriteTextureGUIDs:
     - 675ab298e1a2968469351a3c1b1e9800
     - 2b62706120bf85b4a98c92af3ad644ab
+    - 2dad0f6f96f3adb45a34699179e6ae09
+    - b9b18f23cf4478e4e9b2a951b81e9964
     spriteTextureTimeStamps:
     - 1373033334
     - 1373665385
+    - 1373043284
+    - 1373659197
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

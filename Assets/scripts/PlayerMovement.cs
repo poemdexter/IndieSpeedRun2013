@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour {
 	public bool isGrounded = false;
 	public bool isJumping = false;
 	public bool inAir = false;
+	public bool isHit = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
@@ -54,6 +55,7 @@ public class PlayerMovement : MonoBehaviour {
 			moveDirection += jumpDirection;
 		}
 		
+		// move us for real
 		transform.Translate(moveDirection * Time.deltaTime);
 	}
 	
@@ -70,5 +72,14 @@ public class PlayerMovement : MonoBehaviour {
 			}
 		}
 		return false;
+	}
+	
+	void OnCollisionEnter(Collision collision)
+	{
+		// we hit an obstacle here
+		if(collision.collider.CompareTag("Obstacle"))
+		{
+			// we need to slow our speed
+		}
 	}
 }
