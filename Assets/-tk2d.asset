@@ -700,16 +700,19 @@ MonoBehaviour:
     - rogue_stand
     - enemy_still
     - chest_close
+    - dragon_temp
     spriteTextureGUIDs:
     - 675ab298e1a2968469351a3c1b1e9800
     - 2b62706120bf85b4a98c92af3ad644ab
     - 2dad0f6f96f3adb45a34699179e6ae09
     - b9b18f23cf4478e4e9b2a951b81e9964
+    - ce128cc20f106354397fe6dedfe9b19d
     spriteTextureTimeStamps:
-    - 1373033334
-    - 1373665385
-    - 1373043284
-    - 1373659197
+    - 1379109172.63877
+    - 1379109172.64277
+    - 1379112962.99657
+    - 1379112962.99056
+    - 1379114872.47978
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
