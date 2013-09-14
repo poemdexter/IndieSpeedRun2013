@@ -1,6 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\ThrowableObject.cs">
+    <Files>
+      <File FileName="Assets\scripts\PlayerMovement.cs" Line="107" Column="74" />
+      <File FileName="Assets\scripts\ThrowableObject.cs" Line="25" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 	public bool isJumping = false;
 	public bool inAir = false;
 	public bool isHit = false;
+	public bool isThrowing = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
@@ -30,10 +31,24 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			inAir = true;
 			isGrounded = false;
+			isThrowing = false;		// no throwing while jumping
 			currentGravity = gravity;
 		}
 		
 		CalculateMoveDirection();
+	}
+	
+	void Update()
+	{
+		if(isGrounded && Input.GetKeyDown(KeyCode.X))	// is throwing if key pressed while on ground
+		{
+			isThrowing = true;
+		}
+		
+		if(Input.GetKeyUp (KeyCode.X))
+		{
+			isThrowing = false;
+		}
 	}
 	
 	void CalculateMoveDirection()
@@ -80,6 +95,16 @@ public class PlayerMovement : MonoBehaviour {
 		if(collision.collider.CompareTag("Obstacle"))
 		{
 			// we need to slow our speed
+		}
+		
+	}
+	
+	void OnCollisionStay(Collision collision)
+	{
+		// we are colliding with a throwable object and happen to be throwing, tell the object to get thrown
+		if(collision.collider.CompareTag("Throwable") && isThrowing)
+		{
+			collision.collider.gameObject.GetComponent<ThrowableObject>().Throw();
 		}
 	}
 }
