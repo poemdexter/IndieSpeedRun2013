@@ -61,7 +61,7 @@ MonoBehaviour:
   atlasWidth: 2048
   atlasHeight: 2048
   forceSquareAtlas: 0
-  atlasWastage: 33.6512566
+  atlasWastage: 33.5867882
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
@@ -81,6 +81,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -120,6 +121,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -159,6 +161,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -198,6 +201,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -237,6 +241,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -276,6 +281,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -315,6 +321,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -354,6 +361,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -393,6 +401,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -432,6 +441,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -471,6 +481,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -510,6 +521,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -549,6 +561,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -588,6 +601,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -627,6 +641,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -666,6 +681,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -705,6 +721,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -744,6 +761,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -783,6 +801,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
+    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -800,6 +819,46 @@ MonoBehaviour:
     colliderType: 3
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 629, y: 462}
+    polyColliderIslands: []
+    polyColliderCap: 1
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+    attachPoints: []
+  - name: dragon_temp
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: ce128cc20f106354397fe6dedfe9b19d, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 0
+    anchorY: 0
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 64
+    diceFilter: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 0
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
     polyColliderIslands: []
     polyColliderCap: 1
     colliderConvex: 0

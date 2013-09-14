@@ -172,10 +172,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .849609852, y: .0263676755}
-    - {x: .870116711, y: .0263676755}
-    - {x: .849609852, y: .046874512}
-    - {x: .870116711, y: .046874512}
+    - {x: .875000477, y: .0263676755}
+    - {x: .895507336, y: .0263676755}
+    - {x: .875000477, y: .046874512}
+    - {x: .895507336, y: .046874512}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 2d37f8d9d297e7740b2ba478c9f3f5c0, type: 2}
     materialId: 0
@@ -788,6 +788,44 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     attachPoints: []
+  - name: dragon_temp
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.4000001, y: 2.4000001, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.4000001, y: 2.4000001, z: 0}
+    texelSize: {x: .0500000007, y: .0500000007}
+    positions:
+    - {x: -1.20000005, y: -1.20000005, z: 0}
+    - {x: 1.20000005, y: -1.20000005, z: 0}
+    - {x: -1.20000005, y: 1.20000005, z: 0}
+    - {x: 1.20000005, y: 1.20000005, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .849609852, y: .0263676755}
+    - {x: .873046398, y: .0263676755}
+    - {x: .849609852, y: .0498041995}
+    - {x: .873046398, y: .0498041995}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 2d37f8d9d297e7740b2ba478c9f3f5c0, type: 2}
+    materialId: 0
+    sourceTextureGUID: ce128cc20f106354397fe6dedfe9b19d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
@@ -801,7 +839,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 10
-  buildKey: 1710026838
+  buildKey: 965152363
   dataGuid: 523e3c935bab6c047bf394a5bcc2db1d
   managedSpriteCollection: 0
   hasPlatformData: 0
