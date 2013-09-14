@@ -369,7 +369,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -408,7 +408,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -447,7 +447,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -486,7 +486,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -525,7 +525,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -564,7 +564,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -603,7 +603,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -642,7 +642,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -681,7 +681,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -720,7 +720,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -759,7 +759,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -798,7 +798,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 75}
+    boxColliderMin: {x: 265, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
