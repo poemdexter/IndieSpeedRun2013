@@ -103,6 +103,11 @@ public class PlayerMovement : MonoBehaviour {
 		return false;
 	}
 	
+	void OnTriggerStay(Collider collider)
+	{
+		Debug.Log(collider.gameObject.name);
+	}
+	
 	void OnCollisionEnter(Collision collision)
 	{
 		// we hit an obstacle here
@@ -116,6 +121,10 @@ public class PlayerMovement : MonoBehaviour {
 	
 	void OnCollisionStay(Collision collision)
 	{
+		if (collision.collider.CompareTag("Throwable"))
+		{
+			//Debug.Log("heh");
+		}
 		// we are colliding with a throwable object and happen to be throwing, tell the object to get thrown
 		if(collision.collider.CompareTag("Throwable") && isThrowing)
 		{

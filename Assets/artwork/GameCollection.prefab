@@ -81,7 +81,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -121,7 +120,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -161,7 +159,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -201,7 +198,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -241,7 +237,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -281,7 +276,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -321,7 +315,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -361,7 +354,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -401,7 +393,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -441,7 +432,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -481,7 +471,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -521,7 +510,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -536,7 +524,7 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 3
+    colliderType: 0
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
@@ -561,7 +549,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -601,7 +588,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -641,7 +627,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -681,7 +666,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -696,7 +680,7 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 3
+    colliderType: 0
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
@@ -721,7 +705,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -761,7 +744,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -801,7 +783,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -841,7 +822,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
