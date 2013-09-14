@@ -61,7 +61,7 @@ MonoBehaviour:
   atlasWidth: 2048
   atlasHeight: 2048
   forceSquareAtlas: 0
-  atlasWastage: 32.4538727
+  atlasWastage: 32.516243
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
@@ -806,11 +806,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: dragon_temp
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: ce128cc20f106354397fe6dedfe9b19d, type: 3}
+    texture: {fileID: 0}
     materialId: 0
     anchor: 4
     anchorX: 0

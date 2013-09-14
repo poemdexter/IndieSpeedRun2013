@@ -740,7 +740,7 @@ MonoBehaviour:
     - king run0009
     - king run0003
     - king run0004
-    - dragon_temp
+    - 
     - stonewall
     - pointer
     - grass
@@ -764,7 +764,7 @@ MonoBehaviour:
     - e5f2ec752ada5cc4ba4497da0deb471f
     - efad24eccd41e3441a1df8b0ea31cee7
     - fd0abe2e81f53134aaa95614228a9a41
-    - ce128cc20f106354397fe6dedfe9b19d
+    - 
     - f5c51eed1a3c8624fa45c9a581cb32ff
     - b1034c99046f7364599d66b1a4204d5f
     - 1d2fee918bd7ba5448f1a78629577d8d
@@ -788,10 +788,10 @@ MonoBehaviour:
     - 1379150997.45074
     - 1379150997.43274
     - 1379150997.43574
-    - 1379151211.8418
+    - 0
     - 1379149025
     - 1379160880.57743
-    - 1379174202.36823
+    - 1379181239.08957
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

@@ -121,6 +121,11 @@ public class PlayerMovement : MonoBehaviour {
 			currentSpeed -= stumbleSpeed; // we need to slow our speed
 			isStumbling = true; // and flag as stumbling so we can recover
 		}
+		
+		if(collider.gameObject.CompareTag("Finish"))
+		{
+			Debug.Log("winner");
+		}
 	}
 	
 	// return values match animation clip names
