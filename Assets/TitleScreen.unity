@@ -172,6 +172,44 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &118482772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 118482773}
+  - 114: {fileID: 118482774}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &118482773
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 118482772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &118482774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 118482772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55ce4eb49926a447a04453f43678f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &203424523
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,11 +371,11 @@ AudioSource:
   m_GameObject: {fileID: 203424523}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 674a6919300f5b14cac5dd0247867cb6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d990791b6001623448c1bef44a3ebebc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -511,10 +549,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d932ed487efc2f4c8b824406c968e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sendMessageTarget: {fileID: 0}
+  sendMessageTarget: {fileID: 118482772}
   SendMessageOnDownMethodName: 
   SendMessageOnUpMethodName: 
-  SendMessageOnClickMethodName: 
+  SendMessageOnClickMethodName: StartGame
   SendMessageOnReleaseMethodName: 
   isChildOfAnotherUIItem: 0
   registerPressFromChildren: 0
@@ -961,6 +999,14 @@ Prefab:
     - target: {fileID: 400000, guid: 1c7fbdd00920ad3489cb069e9891239f, type: 2}
       propertyPath: m_LocalPosition.x
       value: .00241386401
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1c7fbdd00920ad3489cb069e9891239f, type: 2}
+      propertyPath: sendMessageTarget
+      value: 
+      objectReference: {fileID: 118482772}
+    - target: {fileID: 11400002, guid: 1c7fbdd00920ad3489cb069e9891239f, type: 2}
+      propertyPath: SendMessageOnClickMethodName
+      value: StartGame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c7fbdd00920ad3489cb069e9891239f, type: 2}
