@@ -3,10 +3,12 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 	
-	public float speed = 5.0f;
+	public float currentSpeed = 10.0f;
+	public float runSpeed = 10.0f;
 	public float jumpSpeed = 5.0f;
 	public float stumbleSpeed = 5.0f;
-	public float gravity = -.1f;
+	public float recoverSpeed = 0.1f;
+	public float gravity = -0.1f;
 	public float currentGravity = 0;
 	
 	public bool isGrounded = false;
@@ -46,8 +48,7 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			isThrowing = true;
 		}
-		
-		if(Input.GetKeyUp (KeyCode.X))
+		else
 		{
 			isThrowing = false;
 		}
@@ -55,10 +56,10 @@ public class PlayerMovement : MonoBehaviour {
 	
 	void CalculateMoveDirection()
 	{
-		moveDirection = new Vector2(speed, 0); // gotta go fast (to the right)
+		moveDirection = new Vector2(currentSpeed, 0); // gotta go fast (to the right)
 		
 		// we're on the ground and hit spacebar
-		if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+		if (isGrounded && Input.GetKeyDown(KeyCode.Z))
 		{
 			isJumping = true;
 			isGrounded = false;
@@ -96,7 +97,7 @@ public class PlayerMovement : MonoBehaviour {
 		// we hit an obstacle here
 		if(collision.collider.CompareTag("Obstacle"))
 		{
-			speed -= stumbleSpeed; // we need to slow our speed
+			currentSpeed -= stumbleSpeed; // we need to slow our speed
 			isStumbling = true; // and flag as stumbling so we can recover
 		}
 		
