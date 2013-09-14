@@ -81,8 +81,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 54.9903069, y: 2.4000001, z: 1}
-  m_Center: {x: 27.4951534, y: 1.20000005, z: 0}
+  m_Size: {x: 1920, y: 2.4000001, z: 0}
+  m_Center: {x: 960, y: 1.20000005, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,13 +97,13 @@ MonoBehaviour:
   collection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 0
+  _spriteId: 22
   boxCollider: {fileID: 6500000}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 0
-  _dimensions: {x: 1099.80615, y: 48}
+  renderLayer: 10
+  _dimensions: {x: 38400, y: 48}
   _anchor: 0
   _createBoxCollider: 1
 --- !u!1001 &100100000

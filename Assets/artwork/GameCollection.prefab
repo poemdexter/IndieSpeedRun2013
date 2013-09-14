@@ -61,7 +61,7 @@ MonoBehaviour:
   atlasWidth: 2048
   atlasHeight: 2048
   forceSquareAtlas: 0
-  atlasWastage: 32.5170975
+  atlasWastage: 32.4538727
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
@@ -81,7 +81,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -121,7 +120,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -161,7 +159,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -201,7 +198,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -241,7 +237,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -281,7 +276,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -321,7 +315,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -361,7 +354,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -377,7 +369,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -401,7 +393,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -417,7 +408,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -441,7 +432,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -457,7 +447,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -481,7 +471,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -497,7 +486,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -521,7 +510,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -536,8 +524,8 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 0
-    boxColliderMin: {x: 0, y: 0}
+    colliderType: 3
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -561,7 +549,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -577,7 +564,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -601,7 +588,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -617,7 +603,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -641,7 +627,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -657,7 +642,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -681,7 +666,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -696,8 +680,8 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 0
-    boxColliderMin: {x: 0, y: 0}
+    colliderType: 3
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -721,7 +705,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -737,7 +720,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -761,7 +744,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -777,7 +759,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -801,7 +783,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -817,7 +798,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 75}
     boxColliderMax: {x: 629, y: 462}
     polyColliderIslands: []
     polyColliderCap: 1
@@ -841,7 +822,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -881,7 +861,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -921,7 +900,6 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    diceFilter: 0
     pad: 0
     extraPadding: 0
     source: 0
@@ -939,6 +917,45 @@ MonoBehaviour:
     colliderType: 1
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 1
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+    attachPoints: []
+  - name: grass
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: 1d2fee918bd7ba5448f1a78629577d8d, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 0
+    anchorY: 0
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 64
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 3
+    boxColliderMin: {x: 0, y: 5}
+    boxColliderMax: {x: 48, y: 48}
     polyColliderIslands: []
     polyColliderCap: 1
     colliderConvex: 0
@@ -976,7 +993,7 @@ MonoBehaviour:
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
-  editorDisplayScale: 4.32999945
+  editorDisplayScale: 1
   version: 4
   assetName: 
 --- !u!1001 &100100000
