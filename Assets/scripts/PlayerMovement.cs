@@ -122,4 +122,13 @@ public class PlayerMovement : MonoBehaviour {
 			collision.collider.gameObject.GetComponent<ThrowableObject>().Throw();
 		}
 	}
+	
+	// return values match animation clip names
+	public string GetCurrentState()
+	{
+		if (isStumbling) return "Stumble";
+		else if (inAir || isJumping) return "Jump";
+		else if (isGrounded) return "Run";
+		else return "Stand";
+	}
 }
