@@ -704,16 +704,25 @@ MonoBehaviour:
     - rogue_stand
     - enemy_still
     - chest_close
+    - ground_green
+    - ground_yellow
+    - rogue_walk2
     spriteTextureGUIDs:
     - 675ab298e1a2968469351a3c1b1e9800
     - 2b62706120bf85b4a98c92af3ad644ab
     - 2dad0f6f96f3adb45a34699179e6ae09
     - b9b18f23cf4478e4e9b2a951b81e9964
+    - 1b97a7f3c867620478251e696c2b1a57
+    - a60f564d3966ded41a8827ac09f54b58
+    - 0b1d708049e46b943a51647efc57c3a1
     spriteTextureTimeStamps:
     - 1373033334
     - 1373665385
     - 1373043284
     - 1373659197
+    - 1373033236
+    - 1373033270
+    - 1373665418
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
