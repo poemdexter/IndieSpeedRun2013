@@ -133,6 +133,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 496986756}
@@ -153,7 +157,7 @@ GameObject:
   - 114: {fileID: 48145942}
   - 54: {fileID: 48145941}
   - 114: {fileID: 48145948}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ThrowableMoving
   m_TagString: Throwable
   m_Icon: {fileID: 0}
@@ -298,7 +302,7 @@ GameObject:
   - 65: {fileID: 58014271}
   - 114: {fileID: 58014270}
   - 54: {fileID: 58014269}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Throwable
   m_TagString: Throwable
   m_Icon: {fileID: 0}
@@ -531,7 +535,7 @@ GameObject:
   - 114: {fileID: 406042253}
   - 54: {fileID: 406042257}
   - 65: {fileID: 406042258}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Obstacle
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -792,7 +796,7 @@ GameObject:
   - 114: {fileID: 496986759}
   - 54: {fileID: 496986758}
   - 114: {fileID: 496986757}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ThrowableMoving
   m_TagString: Throwable
   m_Icon: {fileID: 0}
@@ -978,6 +982,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 48145940}
@@ -1151,7 +1159,7 @@ GameObject:
   - 114: {fileID: 841883376}
   - 54: {fileID: 841883375}
   - 114: {fileID: 841883374}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ThrowableMoving
   m_TagString: Throwable
   m_Icon: {fileID: 0}
@@ -1297,7 +1305,7 @@ GameObject:
   - 114: {fileID: 846751578}
   - 54: {fileID: 846751577}
   - 114: {fileID: 846751576}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ThrowableMoving
   m_TagString: Throwable
   m_Icon: {fileID: 0}
@@ -1479,6 +1487,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 846751575}
@@ -1534,6 +1546,10 @@ Prefab:
     - target: {fileID: 6500000, guid: 20abffe0c8505134f8ff73de9151497f, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20abffe0c8505134f8ff73de9151497f, type: 2}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20abffe0c8505134f8ff73de9151497f, type: 2}
@@ -1639,6 +1655,10 @@ Prefab:
       propertyPath: m_Constraints
       value: 126
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dd1d5c79d6be1ce4ca108e1f6670bd96, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd1d5c79d6be1ce4ca108e1f6670bd96, type: 2}
   m_RootGameObject: {fileID: 406042252}
@@ -1694,6 +1714,10 @@ Prefab:
     - target: {fileID: 6500000, guid: 55af606842577254bb47feb4a021d796, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
@@ -1755,6 +1779,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 841883373}
@@ -1815,6 +1843,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55af606842577254bb47feb4a021d796, type: 2}
   m_RootGameObject: {fileID: 1931971953}
@@ -1835,7 +1867,7 @@ GameObject:
   - 114: {fileID: 1931971956}
   - 54: {fileID: 1931971955}
   - 114: {fileID: 1931971954}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ThrowableMoving
   m_TagString: Throwable
   m_Icon: {fileID: 0}
@@ -1981,7 +2013,7 @@ GameObject:
   - 114: {fileID: 2002679588}
   - 54: {fileID: 2002679587}
   - 114: {fileID: 2002679586}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ThrowableMoving
   m_TagString: Throwable
   m_Icon: {fileID: 0}
