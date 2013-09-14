@@ -23,6 +23,20 @@ public class PlayerMovement : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
+		
+	}
+	
+	void Update()
+	{
+		if(isGrounded && Input.GetKeyDown(KeyCode.X))	// is throwing if key pressed while on ground
+		{
+			isThrowing = true;
+		}
+		else
+		{
+			isThrowing = false;
+		}
+		
 		if (IsGrounded())
 		{
 			isGrounded = true;
@@ -40,18 +54,6 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		
 		CalculateMoveDirection();
-	}
-	
-	void Update()
-	{
-		if(isGrounded && Input.GetKeyDown(KeyCode.X))	// is throwing if key pressed while on ground
-		{
-			isThrowing = true;
-		}
-		else
-		{
-			isThrowing = false;
-		}
 	}
 	
 	void CalculateMoveDirection()

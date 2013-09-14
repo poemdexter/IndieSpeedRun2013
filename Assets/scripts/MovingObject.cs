@@ -27,13 +27,8 @@ public class MovingObject : MonoBehaviour {
 		//Necessary to keep object "flat" and keep gravity working properly, otherwise object's "down" changes
 		rigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ;
 	}
-	
+
 	void Update()
-	{
-	
-	}
-	
-	void FixedUpdate()
 	{
 		if (IsGrounded())
 		{

@@ -13,7 +13,7 @@ public class DragonBehavior : MonoBehaviour {
 	
 	public Vector2 moveDirection = Vector2.zero;
 	
-	void FixedUpdate (){
+	void Update (){
 		
 		
 		calculateMoveRate();
