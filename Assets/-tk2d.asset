@@ -766,3 +766,16 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: DragonCollection
+    spriteCollectionGUID: c8430609362190546bb0bc84b124ff73
+    spriteCollectionDataGUID: 65ac584244461304ea5de126463d448e
+    spriteNames:
+    - dragon
+    spriteTextureGUIDs:
+    - 9395f11ab90a43f47ab84a52a390d481
+    spriteTextureTimeStamps:
+    - 1379153626.46025
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
