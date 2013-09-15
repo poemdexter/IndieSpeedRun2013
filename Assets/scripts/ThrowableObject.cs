@@ -65,6 +65,11 @@ public class ThrowableObject : MonoBehaviour {
 			rigidbody.useGravity = true;									// necessary to make object throw more nicely
 			DestroyObject(pointer);
 			
+			// change sprite
+			tk2dSpriteAnimator anim = GetComponent<tk2dSpriteAnimator>();
+			if (anim != null) anim.enabled = false; // turn of animation if we're a moving peasant
+			GetComponent<tk2dSprite>().SetSprite("pesant throw");
+			
 			// play peasant scream sound
 			AudioSource.PlayClipAtPoint(screams[Random.Range( 0, screams.Count )], transform.position);
 		}

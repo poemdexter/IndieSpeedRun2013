@@ -3,8 +3,6 @@ using System.Collections;
 
 public class HeartMeterScript : MonoBehaviour {
 	
-	public GameObject sceneController;
-	
 	private int maxHearts = 3;
 	private int currentHearts = 3;
 	private tk2dSprite heart;
@@ -42,15 +40,28 @@ public class HeartMeterScript : MonoBehaviour {
 				heart.transform.localScale = new Vector3(2, 2, 1);
 			}
 		}
-		
-		if(IsHeartMeterEmpty())	// check is made later so the heart sprite changes before scene restarts
+	}
+	
+	// change the last empty heart to full (health pickup)
+	public void IncreaseHearts()
+	{
+		if (currentHearts < maxHearts)
 		{
-			// reset scene
-			sceneController.GetComponent<SceneControllerScript>().Restart();
+			currentHearts++;
+			
+			for(int i = 1; i <= currentHearts; i++)
+			{
+				heart = transform.FindChild("Heart"+i).GetComponent<tk2dSprite>();
+				heart.SetSprite("HeartFull");
+				if(i == currentHearts)
+				{
+					heart.transform.localScale = new Vector3(2, 2, 1);
+				}
+			}
 		}
 	}
 	
-	bool IsHeartMeterEmpty()
+	public bool IsHeartMeterEmpty()
 	{
 		if(currentHearts > 0)
 		{

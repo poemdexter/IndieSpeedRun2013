@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 	
 	public GameObject heartMeter;
+	public GameObject sceneController;
 	
 	public float currentSpeed = 20.0f;
 	public float runSpeed = 20.0f;
@@ -25,9 +26,12 @@ public class PlayerMovement : MonoBehaviour {
 	public bool isDragonBoosted = false;
 	public bool isThrowing = false;
 	public bool isShoving = false;
+	public bool hasStumbleAnimated = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
+	
+	public ParticleSystem charcoalParticleEffect;
 	
 	public void Activate()
 	{
@@ -142,11 +146,19 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			currentSpeed -= stumbleSpeed; // we need to slow our speed
 			isStumbling = true; // and flag as stumbling so we can recover
+			GetComponent<PlayerAnimation>().PlayStumbleOnce();
 		}
 		
 		if(collider.gameObject.CompareTag("Finish"))
 		{
 			Debug.Log("winner");
+		}
+		
+		// heart pickup, tell the meter to add health
+		if(collider.gameObject.CompareTag("HeartPickup"))
+		{
+			heartMeter.GetComponent<HeartMeterScript>().IncreaseHearts();
+			Destroy(collider.gameObject);
 		}
 		
 		// trigger the section so that objects within can start moving
@@ -161,6 +173,17 @@ public class PlayerMovement : MonoBehaviour {
 			
 			// deplete heart meter
 			heartMeter.GetComponent<HeartMeterScript>().DepleteHearts();
+			
+			// if heart meter is empty, deactivate king and blow him up
+			if(heartMeter.GetComponent<HeartMeterScript>().IsHeartMeterEmpty())
+			{
+				isActivated = false;
+				renderer.enabled = false;
+				ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, transform.position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
+				localCharcoal.Play();
+				// start scene fade/reset
+				sceneController.GetComponent<SceneControllerScript>().Restart();
+			}
 			
 			if (isStumbling)
 			{
@@ -177,11 +200,11 @@ public class PlayerMovement : MonoBehaviour {
 	// return values match animation clip names
 	public string GetCurrentState()
 	{
-		if (isStumbling) return "Stumble";
-		if (isShoving) return "Shove";
-		else if (inAir || isJumping) return "Jump";
-		else if (isGrounded) return "Run";
-		else if (isDragonBoosted) return "Boosted";
-		else return "Stand";
+			if (isShoving) return "Shove";
+		    else if (isDragonBoosted) return "Fire";
+			else if (inAir || isJumping) return "Jump";
+			else if (isGrounded) return "Run";
+			else return "Stand";
+		
 	}
 }
