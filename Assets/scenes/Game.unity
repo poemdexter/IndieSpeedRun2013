@@ -85,6 +85,7 @@ GameObject:
   - 33: {fileID: 13752589}
   - 23: {fileID: 13752588}
   - 114: {fileID: 13752587}
+  - 65: {fileID: 13752590}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -119,7 +120,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 13752590}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -151,6 +152,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 2066499138}
   m_GameObject: {fileID: 13752585}
   m_Mesh: {fileID: 0}
+--- !u!65 &13752590
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13752585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &28912970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1321,7 @@ GameObject:
   - 33: {fileID: 208799838}
   - 23: {fileID: 208799837}
   - 114: {fileID: 208799836}
+  - 65: {fileID: 208799839}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -1342,7 +1356,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 208799839}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -1374,6 +1388,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1549313051}
   m_GameObject: {fileID: 208799834}
   m_Mesh: {fileID: 0}
+--- !u!65 &208799839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 208799834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &236634656
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,6 +2698,7 @@ GameObject:
   - 33: {fileID: 402031295}
   - 23: {fileID: 402031294}
   - 114: {fileID: 402031293}
+  - 65: {fileID: 402031296}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -2706,7 +2733,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 402031296}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -2738,6 +2765,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 704588305}
   m_GameObject: {fileID: 402031291}
   m_Mesh: {fileID: 0}
+--- !u!65 &402031296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402031291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &434185183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3580,6 +3619,7 @@ GameObject:
   - 33: {fileID: 593157976}
   - 23: {fileID: 593157975}
   - 114: {fileID: 593157974}
+  - 65: {fileID: 593157977}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -3614,7 +3654,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 593157977}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -3646,6 +3686,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 67264967}
   m_GameObject: {fileID: 593157972}
   m_Mesh: {fileID: 0}
+--- !u!65 &593157977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593157972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &621997395
 GameObject:
   m_ObjectHideFlags: 0
@@ -6166,6 +6218,7 @@ GameObject:
   - 33: {fileID: 875952267}
   - 23: {fileID: 875952266}
   - 114: {fileID: 875952265}
+  - 65: {fileID: 875952268}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -6200,7 +6253,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 875952268}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -6232,6 +6285,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1417504507}
   m_GameObject: {fileID: 875952263}
   m_Mesh: {fileID: 0}
+--- !u!65 &875952268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875952263}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &914320308
 GameObject:
   m_ObjectHideFlags: 0
@@ -7038,6 +7103,7 @@ GameObject:
   - 33: {fileID: 1075720886}
   - 23: {fileID: 1075720885}
   - 114: {fileID: 1075720884}
+  - 65: {fileID: 1075720887}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -7072,7 +7138,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1075720887}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -7104,6 +7170,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 2008080755}
   m_GameObject: {fileID: 1075720882}
   m_Mesh: {fileID: 0}
+--- !u!65 &1075720887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075720882}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1137568102
 GameObject:
   m_ObjectHideFlags: 0
@@ -8962,6 +9040,7 @@ GameObject:
   - 33: {fileID: 1471546436}
   - 23: {fileID: 1471546435}
   - 114: {fileID: 1471546434}
+  - 65: {fileID: 1471546437}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -8996,7 +9075,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1471546437}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -9028,6 +9107,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 689534290}
   m_GameObject: {fileID: 1471546432}
   m_Mesh: {fileID: 0}
+--- !u!65 &1471546437
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1471546432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1505138607
 GameObject:
   m_ObjectHideFlags: 0
@@ -9852,6 +9943,7 @@ GameObject:
   - 33: {fileID: 1561415045}
   - 23: {fileID: 1561415044}
   - 114: {fileID: 1561415043}
+  - 65: {fileID: 1561415046}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -9886,7 +9978,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1561415046}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -9918,6 +10010,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 815671397}
   m_GameObject: {fileID: 1561415041}
   m_Mesh: {fileID: 0}
+--- !u!65 &1561415046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1561415041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1572059595
 GameObject:
   m_ObjectHideFlags: 0
@@ -12169,6 +12273,7 @@ GameObject:
   - 33: {fileID: 1867491809}
   - 23: {fileID: 1867491808}
   - 114: {fileID: 1867491807}
+  - 65: {fileID: 1867491811}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -12191,7 +12296,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1867491811}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -12232,6 +12337,18 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 2138300888}
+--- !u!65 &1867491811
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867491806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1871858028
 GameObject:
   m_ObjectHideFlags: 0
@@ -13475,6 +13592,7 @@ GameObject:
   - 33: {fileID: 1977889473}
   - 23: {fileID: 1977889472}
   - 114: {fileID: 1977889471}
+  - 65: {fileID: 1977889474}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -13509,7 +13627,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1977889474}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -13541,6 +13659,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 350834434}
   m_GameObject: {fileID: 1977889469}
   m_Mesh: {fileID: 0}
+--- !u!65 &1977889474
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1977889469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1997144815
 GameObject:
   m_ObjectHideFlags: 0
@@ -14400,6 +14530,7 @@ MonoBehaviour:
   isDragonBoosted: 0
   isThrowing: 0
   isShoving: 0
+  hasStumbleAnimated: 0
   moveDirection: {x: 0, y: 0}
   jumpDirection: {x: 0, y: 0}
   charcoalParticleEffect: {fileID: 19800000, guid: e0035eb25277b3c44a20e92a9cf85abc,
@@ -14805,6 +14936,7 @@ GameObject:
   - 33: {fileID: 2113850656}
   - 23: {fileID: 2113850655}
   - 114: {fileID: 2113850654}
+  - 65: {fileID: 2113850657}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -14839,7 +14971,7 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .5, y: 3, z: 1}
   _spriteId: 5
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 2113850657}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -14871,6 +15003,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 358721842}
   m_GameObject: {fileID: 2113850652}
   m_Mesh: {fileID: 0}
+--- !u!65 &2113850657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2113850652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.70000029, y: 30.3000011, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2138300887
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour {
 	public bool isDragonBoosted = false;
 	public bool isThrowing = false;
 	public bool isShoving = false;
+	public bool hasStumbleAnimated = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
@@ -144,6 +145,7 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			currentSpeed -= stumbleSpeed; // we need to slow our speed
 			isStumbling = true; // and flag as stumbling so we can recover
+			GetComponent<PlayerAnimation>().PlayStumbleOnce();
 		}
 		
 		if(collider.gameObject.CompareTag("Finish"))
@@ -188,11 +190,11 @@ public class PlayerMovement : MonoBehaviour {
 	// return values match animation clip names
 	public string GetCurrentState()
 	{
-		if (isStumbling) return "Stumble";
-		if (isShoving) return "Shove";
-		else if (inAir || isJumping) return "Jump";
-		else if (isGrounded) return "Run";
-		else if (isDragonBoosted) return "Fire";
-		else return "Stand";
+			if (isShoving) return "Shove";
+		    else if (isDragonBoosted) return "Fire";
+			else if (inAir || isJumping) return "Jump";
+			else if (isGrounded) return "Run";
+			else return "Stand";
+		
 	}
 }
