@@ -19269,7 +19269,7 @@ MonoBehaviour:
   painSound1: {fileID: 8300000, guid: 32a811c8b448eba4faf46241fccff2f3, type: 3}
   painSound2: {fileID: 8300000, guid: 5ab49fa8ddf050d46aa73be237598126, type: 3}
   heartMeter: {fileID: 810440796}
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 841688809}
   currentSpeed: 20
   runSpeed: 20
   jumpSpeed: 28
