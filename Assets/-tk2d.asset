@@ -29,6 +29,10 @@ MonoBehaviour:
     dataGUID: 
     managed: 0
     loadable: 0
+  - assetGUID: 2f105d2d1528b38469fc31657f8a2247
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -704,19 +708,6 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
-  - name: DragonCollection
-    spriteCollectionGUID: c8430609362190546bb0bc84b124ff73
-    spriteCollectionDataGUID: 65ac584244461304ea5de126463d448e
-    spriteNames:
-    - dragon
-    spriteTextureGUIDs:
-    - 6bdfdba1e10b35b4db4cc77afd1b303a
-    spriteTextureTimeStamps:
-    - 1379167956.01385
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
   - name: GameCollection
     spriteCollectionGUID: e11eb7c75c70e8b4e98ae646a0402252
     spriteCollectionDataGUID: 523e3c935bab6c047bf394a5bcc2db1d
@@ -792,6 +783,106 @@ MonoBehaviour:
     - 1379149025
     - 1379160880.57743
     - 1379181239.08957
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: DragonCollection
+    spriteCollectionGUID: 5adb968f05ea7dd4f9fe5ff51ac09e06
+    spriteCollectionDataGUID: 127c3166f8853664cbeccdbee41c8fe8
+    spriteNames:
+    - dragon walk20014
+    - dragon walk20004
+    - dragon walk20025
+    - dragon walk20008
+    - dragon walk20009
+    - dragon walk20026
+    - dragon walk20028
+    - dragon walk20022
+    - dragon walk20015
+    - dragon walk20021
+    - dragon walk20001
+    - dragon walk20017
+    - dragon walk20002
+    - dragon walk20011
+    - dragon walk20029
+    - dragon walk20030
+    - dragon walk20019
+    - dragon walk20023
+    - dragon walk20020
+    - dragon walk20006
+    - dragon walk20027
+    - dragon walk20007
+    - dragon walk20013
+    - dragon walk20024
+    - dragon walk20012
+    - dragon walk20010
+    - dragon walk20018
+    - dragon walk20003
+    - dragon walk20005
+    - dragon walk20016
+    spriteTextureGUIDs:
+    - 0297a27b25f68b8498ba2c8c8cb2b73a
+    - 127ad0bf0eb409d42a4747f1103580ae
+    - 12c9b742d98f01e488feebcb238dd92f
+    - 1f0f23ca387ce5045a532579fcba4ac4
+    - 2651166523978dd438d7458175534504
+    - 2bf0863eb3a29904aa373d71c87aec63
+    - 2ec15e9bd06f88e419744f0264a4e103
+    - 313387959b45e1540aa4a9d36c596d6c
+    - 432d46ea9951d634ca1aba16f4e59b11
+    - 437104f420349ba42bb50f6673b60ff3
+    - 4789de6c4761092408aedbc9b588f22a
+    - 4c8460e694c2fe140b67dac054e103e9
+    - 50e684108aabb614b91ef8a333116bde
+    - 620b36ac843aa3f4fb2ee2cba9f0d4ca
+    - 66f6eff52875df640b27a5572a2e1a70
+    - 6b3750500b9a96847a5b3fa6b0977801
+    - 7896f765c79795c4c87e606e5f168ba7
+    - 89709a75524439b4ab58cc747662c8c9
+    - 9511140f1626f5a47a048d2354c1339e
+    - 9e34ca0ee6b55d8458d5d8220a57b0e2
+    - a5a9608a0fdb8344bad9d06c730ecb17
+    - a755b41a4d563f648969f109246d5b7d
+    - ad6d9a6fb5be3124d961d4e828d651b3
+    - b5a5f1c569640ad4891fc9752789b798
+    - c0298e19815f5c34d8b81a5d321a07b7
+    - c54167afc897c924eace0cad0d601637
+    - c987bb0d5fe6c2244954c134530af461
+    - df2e52010a773ca4e8f68950fe0aa58c
+    - e95bd84e1c9210f4da5a6ecf5bcfade5
+    - faafc33b8f066e24b8891445948a9eca
+    spriteTextureTimeStamps:
+    - 1379189388
+    - 1379189385
+    - 1379189390
+    - 1379189386
+    - 1379189386
+    - 1379189390
+    - 1379189390
+    - 1379189389
+    - 1379189388
+    - 1379189389
+    - 1379189385
+    - 1379189388
+    - 1379189385
+    - 1379189387
+    - 1379189391
+    - 1379189391
+    - 1379189389
+    - 1379189389
+    - 1379189389
+    - 1379189386
+    - 1379189390
+    - 1379189386
+    - 1379189387
+    - 1379189390
+    - 1379189387
+    - 1379189387
+    - 1379189388
+    - 1379189385
+    - 1379189386
+    - 1379189388
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

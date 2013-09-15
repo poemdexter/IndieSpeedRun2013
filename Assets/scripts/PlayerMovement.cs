@@ -126,6 +126,11 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			Debug.Log("winner");
 		}
+		
+		if (collider.gameObject.CompareTag("SectionTrigger"))
+		{
+			
+		}
 	}
 	
 	// return values match animation clip names

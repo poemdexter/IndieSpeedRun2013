@@ -2,10 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\PlayerMovement.cs">
     <Files>
-      <File FileName="Assets\scripts\PlayerMovement.cs" Line="127" Column="24" />
-      <File FileName="Assets\scripts\TitlePageScript.cs" Line="18" Column="70" />
-      <File FileName="Assets\scripts\DragonBehavior.cs" Line="16" Column="7" />
-      <File FileName="Assets\scripts\MovingObject.cs" Line="30" Column="1" />
+      <File FileName="Assets\scripts\PlayerMovement.cs" Line="132" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
