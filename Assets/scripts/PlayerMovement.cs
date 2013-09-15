@@ -165,7 +165,7 @@ public class PlayerMovement : MonoBehaviour {
 		
 		if(collider.gameObject.CompareTag("Finish"))
 		{
-			Debug.Log("winner");
+			WinTheGame();
 		}
 		
 		// heart pickup, tell the meter to add health
@@ -221,5 +221,11 @@ public class PlayerMovement : MonoBehaviour {
 			else if (isGrounded) return "Run";
 			else return "Stand";
 		
+	}
+	
+	void WinTheGame()
+	{
+		GameObject.Find("Dragon").GetComponent<DragonBehavior>().Deactivate();
+		GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollowPlayer>().WinAndStopCamera();
 	}
 }

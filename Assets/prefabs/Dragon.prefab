@@ -101,11 +101,11 @@ MonoBehaviour:
   footStep1: {fileID: 8300000, guid: 8f377868d840238459bfe89c60aff470, type: 3}
   footStep2: {fileID: 8300000, guid: 91761292efeedf046b80b2a3f2ee9608, type: 3}
   footStep3: {fileID: 8300000, guid: 44929ec5677db2b4195338f0df609400, type: 3}
-  currentSpeed: 23
-  normalSpeed: 23
+  currentSpeed: 22
+  normalSpeed: 22
   minSpeed: 8
-  speedDecrement: 13
-  speedIncrement: .200000003
+  speedDecrement: 15
+  speedIncrement: .300000012
   isActivated: 0
   isHit: 0
   moveDirection: {x: 0, y: 0}

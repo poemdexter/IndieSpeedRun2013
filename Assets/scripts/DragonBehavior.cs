@@ -43,6 +43,12 @@ public class DragonBehavior : MonoBehaviour {
 		anim.AnimationCompleted = FireCompleteDelegate;
 	}
 	
+	public void Deactivate()
+	{
+		isActivated = false;
+		anim.Stop();
+	}
+	
 	void Update ()
 	{
 		if(isActivated)
