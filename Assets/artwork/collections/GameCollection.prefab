@@ -53,15 +53,15 @@ MonoBehaviour:
     spriteCollection: {fileID: 0}
   managedSpriteCollection: 0
   loadable: 0
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   forceTextureSize: 0
   forcedTextureWidth: 2048
   forcedTextureHeight: 2048
   textureCompression: 0
-  atlasWidth: 1024
-  atlasHeight: 2048
+  atlasWidth: 2048
+  atlasHeight: 4096
   forceSquareAtlas: 0
-  atlasWastage: 26.5748978
+  atlasWastage: 80.271492
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
@@ -845,11 +845,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: stonewall
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: f5c51eed1a3c8624fa45c9a581cb32ff, type: 3}
+    texture: {fileID: 0}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -861,7 +861,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    pad: 2
+    pad: 0
     extraPadding: 0
     source: 0
     fromSpriteSheet: 0
@@ -875,7 +875,7 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 1
+    colliderType: 0
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 0, y: 0}
     polyColliderIslands: []
@@ -923,11 +923,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: grass
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 1d2fee918bd7ba5448f1a78629577d8d, type: 3}
+    texture: {fileID: 0}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -939,7 +939,7 @@ MonoBehaviour:
     dice: 0
     diceUnitX: 64
     diceUnitY: 64
-    pad: 2
+    pad: 0
     extraPadding: 0
     source: 0
     fromSpriteSheet: 0
@@ -953,9 +953,9 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 3
-    boxColliderMin: {x: 0, y: 5}
-    boxColliderMax: {x: 48, y: 48}
+    colliderType: 0
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
     polyColliderIslands: []
     polyColliderCap: 1
     colliderConvex: 0
@@ -1703,6 +1703,51 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
+  - name: ground
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: 80302d5f0b66fae4f8a2142a7bb1c5cf, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 0
+    anchorY: 0
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands:
+    - connected: 1
+      points:
+      - {x: 0, y: 0}
+      - {x: 0, y: 61}
+      - {x: 2399, y: 61}
+      - {x: 2399, y: 0}
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 64
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 3
+    boxColliderMin: {x: 0, y: 32}
+    boxColliderMax: {x: 2399, y: 61}
+    polyColliderIslands: []
+    polyColliderCap: 1
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+    attachPoints: []
   spriteCollection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d, type: 2}
   premultipliedAlpha: 0
   altMaterials:
@@ -1734,7 +1779,7 @@ MonoBehaviour:
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
-  editorDisplayScale: 3.69999909
+  editorDisplayScale: 4.05999994
   version: 4
   assetName: 
 --- !u!1001 &100100000
