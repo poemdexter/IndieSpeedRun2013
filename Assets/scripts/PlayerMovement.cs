@@ -127,9 +127,10 @@ public class PlayerMovement : MonoBehaviour {
 			Debug.Log("winner");
 		}
 		
+		// trigger the section so that objects within can start moving
 		if (collider.gameObject.CompareTag("SectionTrigger"))
 		{
-			
+			collider.gameObject.BroadcastMessage("TriggerMe");
 		}
 	}
 	

@@ -19,6 +19,8 @@ public class MovingObject : MonoBehaviour {
 	public bool isJumping = false;
 	public bool inAir = false;
 	
+	public bool triggered = false;
+	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
 	
@@ -30,7 +32,7 @@ public class MovingObject : MonoBehaviour {
 
 	void Update()
 	{
-		if(!rigidbody.useGravity)	//Necessary to make throwable objects look nicer
+		if(triggered && !rigidbody.useGravity)	//Necessary to make throwable objects look nicer
 		{
 			CalculateMoveDirection();
 		}
@@ -44,5 +46,10 @@ public class MovingObject : MonoBehaviour {
 		
 		// move us for real
 		transform.Translate(moveDirection * Time.deltaTime);
+	}
+	
+	void TriggerMe()
+	{
+		triggered = true;
 	}
 }

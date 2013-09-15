@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: DragonCollection3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: dragon walk20013
+    boundsData:
+    - {x: .0499992371, y: .324999332, z: 0}
+    - {x: 45, y: 27.3499985, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 48.4000015, y: 30, z: 0}
+    texelSize: {x: .0500000007, y: .0500000007}
+    positions:
+    - {x: -22.4500008, y: -13.3500004, z: 0}
+    - {x: 22.5499992, y: -13.3500004, z: 0}
+    - {x: -22.4500008, y: 13.999999, z: 0}
+    - {x: 22.5499992, y: 13.999999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .442871571, y: .550781727}
+    - {x: .442871571, y: .990233898}
+    - {x: .709960461, y: .550781727}
+    - {x: .709960461, y: .990233898}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f47f891dfbffa414cbbe36fece6fc078, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3b7d299400a0e264cbfc474ec3592836
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: dragon walk20018
+    boundsData:
+    - {x: -.0999994278, y: .149999619, z: 0}
+    - {x: 45.2000046, y: 27.6999989, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 48.4000015, y: 30, z: 0}
+    texelSize: {x: .0500000007, y: .0500000007}
+    positions:
+    - {x: -22.7000008, y: -13.6999998, z: 0}
+    - {x: 22.5000019, y: -13.6999998, z: 0}
+    - {x: -22.7000008, y: 13.999999, z: 0}
+    - {x: 22.5000019, y: 13.999999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .278320789}
+    - {x: .000977050746, y: .719726086}
+    - {x: .271483898, y: .278320789}
+    - {x: .271483898, y: .719726086}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f47f891dfbffa414cbbe36fece6fc078, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4b427ecb1035a114da9a168208b31405
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: dragon walk20016
+    boundsData:
+    - {x: -.100000381, y: -.100000381, z: 0}
+    - {x: 45.1000023, y: 28.1999989, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 48.4000015, y: 30, z: 0}
+    texelSize: {x: .0500000007, y: .0500000007}
+    positions:
+    - {x: -22.6500015, y: -14.1999998, z: 0}
+    - {x: 22.4500008, y: -14.1999998, z: 0}
+    - {x: -22.6500015, y: 13.999999, z: 0}
+    - {x: 22.4500008, y: 13.999999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .000977050746}
+    - {x: .441405773, y: .000977050746}
+    - {x: .000977050746, y: .276366711}
+    - {x: .441405773, y: .276366711}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f47f891dfbffa414cbbe36fece6fc078, type: 2}
+    materialId: 0
+    sourceTextureGUID: 55cdd07842efec34f9f7bda8324232d4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: dragon walk20015
+    boundsData:
+    - {x: -.0499992371, y: .0499997139, z: 0}
+    - {x: 45.1000023, y: 27.8999977, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 48.4000015, y: 30, z: 0}
+    texelSize: {x: .0500000007, y: .0500000007}
+    positions:
+    - {x: -22.6000004, y: -13.8999996, z: 0}
+    - {x: 22.5000019, y: -13.8999996, z: 0}
+    - {x: -22.6000004, y: 13.999999, z: 0}
+    - {x: 22.5000019, y: 13.999999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .443359852, y: .276367664}
+    - {x: .883788586, y: .276367664}
+    - {x: .443359852, y: .548827648}
+    - {x: .883788586, y: .548827648}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f47f891dfbffa414cbbe36fece6fc078, type: 2}
+    materialId: 0
+    sourceTextureGUID: 681e6848e4b4a054daec265b86ad990f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: dragon walk20017
+    boundsData:
+    - {x: -.0999994278, y: -4.76837158e-07, z: 0}
+    - {x: 45.2000046, y: 28, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 48.4000015, y: 30, z: 0}
+    texelSize: {x: .0500000007, y: .0500000007}
+    positions:
+    - {x: -22.7000008, y: -14, z: 0}
+    - {x: 22.5000019, y: -14, z: 0}
+    - {x: -22.7000008, y: 13.999999, z: 0}
+    - {x: 22.5000019, y: 13.999999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .443359852, y: .000977050746}
+    - {x: .884765148, y: .000977050746}
+    - {x: .443359852, y: .274413586}
+    - {x: .884765148, y: .274413586}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f47f891dfbffa414cbbe36fece6fc078, type: 2}
+    materialId: 0
+    sourceTextureGUID: 71ccd865273992f42aaf58f93329bcb4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: dragon walk20014
+    boundsData:
+    - {x: -.0249996185, y: .199999332, z: 0}
+    - {x: 45.0500031, y: 27.5999985, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 48.4000015, y: 30, z: 0}
+    texelSize: {x: .0500000007, y: .0500000007}
+    positions:
+    - {x: -22.5500011, y: -13.6000004, z: 0}
+    - {x: 22.5000019, y: -13.6000004, z: 0}
+    - {x: -22.5500011, y: 13.999999, z: 0}
+    - {x: 22.5000019, y: 13.999999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .721680164}
+    - {x: .440917492, y: .721680164}
+    - {x: .000977050746, y: .991210461}
+    - {x: .440917492, y: .991210461}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f47f891dfbffa414cbbe36fece6fc078, type: 2}
+    materialId: 0
+    sourceTextureGUID: ebfe8163b8d9dbd468a204c7e7e43963
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: f47f891dfbffa414cbbe36fece6fc078, type: 2}
+  textures:
+  - {fileID: 2800000, guid: d936a78db32e96e4ab904cdce990f68e, type: 3}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 9e44cde22c021fc4983ed80bc8215e33
+  spriteCollectionName: DragonCollection3
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 10
+  buildKey: 69990113
+  dataGuid: 4cadce6a6f5d1a94cb56a74a2a4cd3c1
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
