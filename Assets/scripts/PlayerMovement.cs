@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 	
 	public GameObject heartMeter;
+	public GameObject sceneController;
 	
 	public float currentSpeed = 20.0f;
 	public float runSpeed = 20.0f;
@@ -153,6 +154,13 @@ public class PlayerMovement : MonoBehaviour {
 			Debug.Log("winner");
 		}
 		
+		// heart pickup, tell the meter to add health
+		if(collider.gameObject.CompareTag("HeartPickup"))
+		{
+			heartMeter.GetComponent<HeartMeterScript>().IncreaseHearts();
+			Destroy(collider.gameObject);
+		}
+		
 		// trigger the section so that objects within can start moving
 		if (collider.gameObject.CompareTag("SectionTrigger"))
 		{
@@ -173,6 +181,8 @@ public class PlayerMovement : MonoBehaviour {
 				renderer.enabled = false;
 				ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, transform.position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
 				localCharcoal.Play();
+				// start scene fade/reset
+				sceneController.GetComponent<SceneControllerScript>().Restart();
 			}
 			
 			if (isStumbling)

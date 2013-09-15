@@ -4,6 +4,7 @@ using System.Collections;
 public class SceneControllerScript : MonoBehaviour {
 	
 	public bool fading = true;
+	public bool isRestarting = false;
 	public Texture2D blackPixel;
 	public float fadeSpeed = -0.2f;
 	public float alpha = 1.0f;
@@ -20,7 +21,14 @@ public class SceneControllerScript : MonoBehaviour {
 	{
 		if (fading)
 		{
-			alpha += fadeSpeed * Time.deltaTime;
+			if(!isRestarting)
+			{
+				alpha += fadeSpeed * Time.deltaTime;
+			}
+			else
+			{
+				alpha -= fadeSpeed * Time.deltaTime;
+			}
 			
 			// fade screen
 			GUI.color = new Color(0,0,0,alpha);
@@ -28,11 +36,22 @@ public class SceneControllerScript : MonoBehaviour {
 			GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), blackPixel);
 			
 			// load level if done transition
-			if (alpha <= 0)
+			if(!isRestarting)
 			{
-				fading = false;
-				StartGame();
-			}	
+				if (alpha <= 0)
+				{
+					fading = false;
+					StartGame();
+				}
+			}
+			else
+			{
+				if (alpha >= 1)
+				{
+					fading = false;
+					Application.LoadLevel(1);	// reload the Game scene
+				}
+			}
 		}
 	}
 		
@@ -56,6 +75,8 @@ public class SceneControllerScript : MonoBehaviour {
 	
 	public void Restart()
 	{
-		Application.LoadLevel(1);	// reload the Game scene
+		// fade screen
+		isRestarting = true;
+		fading = true;
 	}
 }
