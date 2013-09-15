@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour {
 	public float jumpSpeed = 5.0f;
 	public float stumbleSpeed = 5.0f;
 	public float recoverSpeed = 0.1f;
+	public float dragonBoostSpeed = 10.0f;
+	public float dragonRecoverySpeed = 0.1f;
 	public float gravity = -0.1f;
 	public float currentGravity = 0;
 	
@@ -16,6 +18,7 @@ public class PlayerMovement : MonoBehaviour {
 	public bool inAir = false;
 	public bool isHit = false;
 	public bool isStumbling = false;
+	public bool isDragonBoosted = false;
 	public bool isThrowing = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
@@ -67,6 +70,16 @@ public class PlayerMovement : MonoBehaviour {
 			{
 				currentSpeed = runSpeed; // stop us from overshooting max speed
 				isStumbling = false;
+			}
+		}
+		
+		if (isDragonBoosted)
+		{	
+			if (currentSpeed > runSpeed) currentSpeed -= dragonRecoverySpeed;
+			else
+			{
+				currentSpeed = runSpeed;
+				isDragonBoosted = false;
 			}
 		}
 		
@@ -132,6 +145,20 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			collider.gameObject.BroadcastMessage("TriggerMe");
 		}
+		
+		if (collider.gameObject.CompareTag("Dragon"))
+		{			
+			// play king pain sound
+			
+			if (isStumbling)
+			{
+				isStumbling = false;
+				currentSpeed = runSpeed;
+			}
+			
+			currentSpeed += dragonBoostSpeed;	// speed up a bit to get away from the dragon
+			isDragonBoosted = true;	// flag as boosted by dragon so we can slow down
+		}
 	}
 	
 	// return values match animation clip names
@@ -140,6 +167,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (isStumbling) return "Stumble";
 		else if (inAir || isJumping) return "Jump";
 		else if (isGrounded) return "Run";
+		else if (isDragonBoosted) return "Boosted";
 		else return "Stand";
 	}
 }
