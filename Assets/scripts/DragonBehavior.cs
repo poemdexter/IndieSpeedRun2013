@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class DragonBehavior : MonoBehaviour {
-	public AudioClip fireSound1, fireSound2;
+	public AudioClip fireSound1, fireSound2, footStep1, footStep2, footStep3;
 	public float currentSpeed = 23.0f;	//current speed
 	public float normalSpeed = 23.0f;	//normal speed
 	public float minSpeed = 8.0f;		//absolute minimum speed
@@ -17,6 +17,7 @@ public class DragonBehavior : MonoBehaviour {
 	public Vector2 moveDirection = Vector2.zero;
 	
 	private List<AudioClip> fireSounds = new List<AudioClip>();
+	private List<AudioClip> footSteps = new List<AudioClip>();
 	
 	private GameObject peasant;
 	public ParticleSystem charcoalParticleEffect;
@@ -29,12 +30,17 @@ public class DragonBehavior : MonoBehaviour {
 		
 		fireSounds.Add(fireSound1);
 		fireSounds.Add(fireSound2);
+		
+		footSteps.Add (footStep1);
+		footSteps.Add (footStep2);
+		footSteps.Add (footStep3);
 	}
 	
 	public void Activate()
 	{
 		isActivated = true;
 		anim.Play();
+		anim.AnimationEventTriggered = FootStepDelegate;
 	}
 	
 	void Update ()
@@ -91,6 +97,15 @@ public class DragonBehavior : MonoBehaviour {
 		// BURNINATE THE PEASANTS (particle effects)
 		ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
 		localCharcoal.Play();
+	}
+	
+	// play random footstep sound
+	void FootStepDelegate(tk2dSpriteAnimator sprite, tk2dSpriteAnimationClip clip, int frameNumber)
+	{
+		if(clip.GetFrame(frameNumber).eventInfo.Equals("DragonFootStep"))
+		{
+			AudioSource.PlayClipAtPoint(footSteps[Random.Range( 0, footSteps.Count )], transform.position);
+		}
 	}
 	
 	void OnTriggerEnter(Collider collider)

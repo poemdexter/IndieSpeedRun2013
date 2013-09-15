@@ -856,6 +856,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireSound1: {fileID: 8300000, guid: 155c370c7a5f7ee439b836a22a934690, type: 3}
   fireSound2: {fileID: 8300000, guid: 79e9ba815be50a840924a1c26e0d3177, type: 3}
+  footStep1: {fileID: 8300000, guid: 8f377868d840238459bfe89c60aff470, type: 3}
+  footStep2: {fileID: 8300000, guid: 91761292efeedf046b80b2a3f2ee9608, type: 3}
+  footStep3: {fileID: 8300000, guid: 44929ec5677db2b4195338f0df609400, type: 3}
   currentSpeed: 23
   normalSpeed: 23
   minSpeed: 8
@@ -1012,7 +1015,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -1070,7 +1073,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -1847,6 +1850,18 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
+      propertyPath: footStep1
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f377868d840238459bfe89c60aff470, type: 3}
+    - target: {fileID: 11400000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
+      propertyPath: footStep2
+      value: 
+      objectReference: {fileID: 8300000, guid: 91761292efeedf046b80b2a3f2ee9608, type: 3}
+    - target: {fileID: 11400000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
+      propertyPath: footStep3
+      value: 
+      objectReference: {fileID: 8300000, guid: 44929ec5677db2b4195338f0df609400, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
   m_RootGameObject: {fileID: 687768290}
