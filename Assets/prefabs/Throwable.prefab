@@ -150,6 +150,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b316c6724e5cca44d8b0ec888e8692a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scream1: {fileID: 8300000, guid: 7ccfdc06811b59d4ea31edc966aa1327, type: 3}
+  scream2: {fileID: 8300000, guid: 7d84729293db60447b8e07bd9cbb3af1, type: 3}
+  scream3: {fileID: 8300000, guid: a28525baf26699c42a96ef11a102d726, type: 3}
+  scream4: {fileID: 8300000, guid: 78095d705462cde4182e2a1c2d7787b5, type: 3}
+  scream5: {fileID: 8300000, guid: 090591ca20a36f745b0c3b54f6af7cdd, type: 3}
+  scream6: {fileID: 8300000, guid: c17920ffa13ae0940be23201fff9e137, type: 3}
+  scream7: {fileID: 8300000, guid: b60e54bf4b2bd2c459742ef18bca4628, type: 3}
+  scream8: {fileID: 8300000, guid: 2a328a24c10ebd34480167ec8aacdb1f, type: 3}
+  scream9: {fileID: 8300000, guid: be7160c80374864488af8ecffcbf0860, type: 3}
   throwVector: {x: -600, y: 600}
   throwRotation: 400
   thrown: 0
