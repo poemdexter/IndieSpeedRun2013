@@ -105,7 +105,6 @@ MonoBehaviour:
   speedIncrement: .200000003
   isActivated: 0
   isHit: 0
-  eatKing: 0
   moveDirection: {x: 0, y: 0}
   charcoalParticleEffect: {fileID: 19800000, guid: cd547d79643a97f4896056c0e2c7378b,
     type: 2}

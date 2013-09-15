@@ -1739,7 +1739,7 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 3
+    colliderType: 0
     boxColliderMin: {x: 0, y: 32}
     boxColliderMax: {x: 2399, y: 61}
     polyColliderIslands: []
