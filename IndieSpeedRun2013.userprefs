@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\DragonBehavior.cs">
     <Files>
-      <File FileName="Assets\scripts\DragonBehavior.cs" Line="86" Column="24" />
+      <File FileName="Assets\scripts\DragonBehavior.cs" Line="85" Column="152" />
+      <File FileName="Assets\scripts\SceneControllerScript.cs" Line="16" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
