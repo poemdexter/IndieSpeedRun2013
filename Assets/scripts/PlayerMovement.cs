@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 	
+	public GameObject heartMeter;
+	
 	public float currentSpeed = 20.0f;
 	public float runSpeed = 20.0f;
 	public float jumpSpeed = 28.0f;
@@ -151,6 +153,9 @@ public class PlayerMovement : MonoBehaviour {
 		if (collider.gameObject.CompareTag("Dragon"))
 		{			
 			// play king pain sound
+			
+			// deplete heart meter
+			heartMeter.GetComponent<HeartMeterScript>().DepleteHearts();
 			
 			if (isStumbling)
 			{
