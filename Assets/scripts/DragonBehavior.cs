@@ -138,6 +138,9 @@ public class DragonBehavior : MonoBehaviour {
 		{
 			anim.Play("Fire");
 			fireHitObject = collider.gameObject;
+			
+			// play fire breath sound
+			AudioSource.PlayClipAtPoint(fireSounds[Random.Range( 0, fireSounds.Count )], transform.position);
 		}
 	}
 }

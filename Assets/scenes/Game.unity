@@ -14645,6 +14645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9ec48186e004b4fa8088f751e24e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpSound: {fileID: 8300000, guid: d4c683b1a02d2ed41942d43aea75b225, type: 3}
+  painSound1: {fileID: 8300000, guid: 32a811c8b448eba4faf46241fccff2f3, type: 3}
+  painSound2: {fileID: 8300000, guid: 5ab49fa8ddf050d46aa73be237598126, type: 3}
   heartMeter: {fileID: 810440796}
   sceneController: {fileID: 841688809}
   currentSpeed: 20
