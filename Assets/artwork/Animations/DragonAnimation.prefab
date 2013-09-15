@@ -44,8 +44,8 @@ MonoBehaviour:
     - spriteCollection: {fileID: 11400000, guid: 127c3166f8853664cbeccdbee41c8fe8,
         type: 2}
       spriteId: 10
-      triggerEvent: 0
-      eventInfo: 
+      triggerEvent: 1
+      eventInfo: DragonFootStep
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 127c3166f8853664cbeccdbee41c8fe8,
@@ -254,8 +254,8 @@ MonoBehaviour:
     - spriteCollection: {fileID: 11400000, guid: 4cadce6a6f5d1a94cb56a74a2a4cd3c1,
         type: 2}
       spriteId: 2
-      triggerEvent: 0
-      eventInfo: 
+      triggerEvent: 1
+      eventInfo: DragonFootStep
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 4cadce6a6f5d1a94cb56a74a2a4cd3c1,
