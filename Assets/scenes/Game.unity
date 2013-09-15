@@ -478,6 +478,27 @@ Prefab:
       propertyPath: m_Size.y
       value: 24.3199997
       objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
+      propertyPath: m_Constraints
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
+      propertyPath: collection
+      value: 
+      objectReference: {fileID: 11400000, guid: 4bd103b4abf964e4cb87d8d4bf397895,
+        type: 2}
+    - target: {fileID: 11400002, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
+      propertyPath: _spriteId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 891400670fc29cd4aa69c7ba83eb9b22, type: 2}
+    - target: {fileID: 6500000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a74702d46c36a74a828e799cec4fb10, type: 2}
   m_RootGameObject: {fileID: 687768290}
@@ -925,10 +946,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: 127c3166f8853664cbeccdbee41c8fe8, type: 2}
+  collection: {fileID: 11400000, guid: 4bd103b4abf964e4cb87d8d4bf397895, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 1
+  _spriteId: 5
   boxCollider: {fileID: 687768296}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -955,7 +976,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 210b6e0557fac904aaf5e8a0b3ad6c96, type: 2}
+  - {fileID: 2100000, guid: 891400670fc29cd4aa69c7ba83eb9b22, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1004,7 +1025,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 27.7000008, y: 24.3199997, z: .200000003}
-  m_Center: {x: 6.23999977, y: .0440001674, z: 0}
+  m_Center: {x: 6.23999977, y: 0, z: 0}
 --- !u!54 &687768297
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1019,7 +1040,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 72
   m_CollisionDetection: 0
 --- !u!114 &687768298
 MonoBehaviour:

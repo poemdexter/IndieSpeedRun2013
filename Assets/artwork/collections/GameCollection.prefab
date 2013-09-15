@@ -61,7 +61,7 @@ MonoBehaviour:
   atlasWidth: 1024
   atlasHeight: 2048
   forceSquareAtlas: 0
-  atlasWastage: 31.7199707
+  atlasWastage: 31.8191528
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
@@ -182,11 +182,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: chest_close
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: b9b18f23cf4478e4e9b2a951b81e9964, type: 3}
+    texture: {fileID: 0}
     materialId: 0
     anchor: 4
     anchorX: 0

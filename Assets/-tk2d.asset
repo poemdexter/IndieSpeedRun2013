@@ -714,8 +714,8 @@ MonoBehaviour:
     spriteNames:
     - king run0012
     - king run0003
+    - king shove0006
     - 
-    - chest_close
     - king run0001
     - ground_yellow
     - king run0004
@@ -746,11 +746,17 @@ MonoBehaviour:
     - pesant0004
     - pesant0011
     - pesant0005
+    - king shove0005
+    - king shove0001
+    - king shove0007
+    - king shove0004
+    - king shove0003
+    - king shove0002
     spriteTextureGUIDs:
     - 7c09b2abe2088874cbfa26a7cdd6a8e1
     - 8c4aa471511a64541939bc959e74eb4b
+    - 34744f23d1084af4fb29d0cfea6fb90f
     - 
-    - b9b18f23cf4478e4e9b2a951b81e9964
     - 8f1d1fff17479634fa8773b4e0e3ea0f
     - a60f564d3966ded41a8827ac09f54b58
     - 904d28c922f17a741a312f3fd50953f4
@@ -781,13 +787,19 @@ MonoBehaviour:
     - ab0bac171b9206d4c8d330fb6e0becd2
     - b6e870e67bba0b24dadaf44b4de07ac5
     - dace458d17d2e0944b31c67f178e0bb4
+    - 473372a7c08b9584090f7aa36b9c8144
+    - d15dd2f9afb439d4ca9548c77ae50e9b
+    - 53011c1b02eda7b4980186082d2c1da3
+    - 8c7283bbd7d5d3440938c9d67351bd48
+    - 76a96cccadd1f9c43b3b9065226fabaa
+    - 807febcf3f66efd459ab74ca258d5d7a
     spriteTextureTimeStamps:
     - 1379205323.08662
     - 1379205323.02562
+    - 1379205323.12163
     - 0
-    - 1379116304.8953
     - 1379205323.02162
-    - 1379154978.31707
+    - 1379207931.00179
     - 1379205323.02662
     - 1379205323.03462
     - 1379205323.08462
@@ -802,9 +814,9 @@ MonoBehaviour:
     - 1379205323.20063
     - 1379205323.20163
     - 1379205323.16263
-    - 1379164964.41424
-    - 1379159635.98947
-    - 1379195208.26409
+    - 1379207930.99879
+    - 1379207931.00079
+    - 1379207931.00379
     - 1379205323.16963
     - 1379205323.13863
     - 1379205323.16463
@@ -816,6 +828,12 @@ MonoBehaviour:
     - 1379205323.15463
     - 1379205323.17163
     - 1379205323.15963
+    - 1379205323.11863
+    - 1379205323.08962
+    - 1379205323.13063
+    - 1379205323.11463
+    - 1379205323.11163
+    - 1379205323.10762
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
