@@ -12,13 +12,12 @@ public class DragonBehavior : MonoBehaviour {
 	
 	public bool isActivated = false;	//dragon doesn't start running until this is true
 	public bool isHit = false;
-	public bool eatKing = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	
 	private List<AudioClip> fireSounds = new List<AudioClip>();
 	
-	private GameObject peasant;
+	private GameObject fireHitObject;
 	public ParticleSystem charcoalParticleEffect;
 	
 	private tk2dSpriteAnimator anim;
@@ -83,14 +82,23 @@ public class DragonBehavior : MonoBehaviour {
 	
 	void FlameOnDelegate(tk2dSpriteAnimator animator, tk2dSpriteAnimationClip clip, int frameNumber)
 	{
-		Vector3 position = peasant.transform.position;
+		string fireTag = fireHitObject.tag;
 		
-		// KILL THE PEASANTS
-		Destroy(peasant);
-		
-		// BURNINATE THE PEASANTS (particle effects)
-		ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
-		localCharcoal.Play();
+		if (fireTag.Equals("Throwable"))
+		{
+			Vector3 position = fireHitObject.transform.position;
+			
+			// KILL THE PEASANTS
+			Destroy(fireHitObject);
+			
+			// BURNINATE THE PEASANTS (particle effects)
+			ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
+			localCharcoal.Play();
+		}
+		else if (fireTag.Equals("Player"))
+		{
+			// TODO: tell player to get bumped
+		}
 	}
 	
 	void OnTriggerEnter(Collider collider)
@@ -99,25 +107,20 @@ public class DragonBehavior : MonoBehaviour {
 		
 		if(collider.gameObject.CompareTag("Throwable") && collider.gameObject.GetComponent<ThrowableObject>().hasBeenThrown())
 		{
-//			Debug.Log("obj hit dragon");
 			isHit = true;
 			anim.AnimationCompleted = FireCompleteDelegate;
 			anim.AnimationEventTriggered = FlameOnDelegate;
 			anim.Play("Fire");
-			peasant = collider.gameObject;
+			fireHitObject = collider.gameObject;
 			
 			// play fire breath sound
 			AudioSource.PlayClipAtPoint(fireSounds[Random.Range( 0, fireSounds.Count )], transform.position);
 		}
-		
-		if(collider.gameObject.CompareTag("Player")) 
+		else if(collider.gameObject.CompareTag("Player")) 
 		{
-			eatKing = true;
+			anim.AnimationCompleted = FireCompleteDelegate;
+			anim.AnimationEventTriggered = FlameOnDelegate;
+			anim.Play("Fire");
 		}
-	}
-	
-	public bool canEatKing() 
-	{
-		return eatKing;
 	}
 }

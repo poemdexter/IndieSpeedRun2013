@@ -29,11 +29,6 @@ public class PlayerMovement : MonoBehaviour {
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
 	
-	void FixedUpdate()
-	{
-		
-	}
-	
 	public void Activate()
 	{
 		isActivated = true;
@@ -173,6 +168,7 @@ public class PlayerMovement : MonoBehaviour {
 				currentSpeed = runSpeed;
 			}
 			
+			// TODO: Move this to triggered event
 			currentSpeed += dragonBoostSpeed;	// speed up a bit to get away from the dragon
 			isDragonBoosted = true;	// flag as boosted by dragon so we can slow down
 		}
