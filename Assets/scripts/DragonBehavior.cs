@@ -14,10 +14,17 @@ public class DragonBehavior : MonoBehaviour {
 	
 	public Vector2 moveDirection = Vector2.zero;
 	
+	tk2dSpriteAnimator anim;
+	
+	void Start()
+	{
+		anim = GetComponent<tk2dSpriteAnimator>();
+	}
+	
 	public void Activate()
 	{
 		isActivated = true;
-		GetComponent<tk2dSpriteAnimator>().Play();
+		anim.Play();
 	}
 	
 	void Update ()
@@ -49,7 +56,6 @@ public class DragonBehavior : MonoBehaviour {
 		transform.Translate(moveDirection * Time.deltaTime);
 	}
 	
-	
 	void reduceSpeed() 
 	{
 		//called when collision happens.
@@ -57,6 +63,12 @@ public class DragonBehavior : MonoBehaviour {
 			currentSpeed = currentSpeed - speedDecrement;
 		else
 			currentSpeed = minSpeed;
+	}
+	
+	// done breathing fire, just walk again
+	void FireCompleteDelegate(tk2dSpriteAnimator sprite, tk2dSpriteAnimationClip clip)
+	{
+		anim.Play("Walk");
 	}
 	
 	void OnTriggerEnter(Collider collider)
@@ -67,6 +79,8 @@ public class DragonBehavior : MonoBehaviour {
 		{
 //			Debug.Log("obj hit dragon");
 			isHit = true;
+			anim.AnimationCompleted = FireCompleteDelegate;
+			anim.Play("Fire");
 			Destroy(collider.gameObject);
 		}
 		

@@ -1060,3 +1060,43 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: DragonFireCollection
+    spriteCollectionGUID: 7b5e269da4dac38479d7cc9718a3edc2
+    spriteCollectionDataGUID: abb42fbea0547e04aa3e44b6cd4ba022
+    spriteNames:
+    - dragon fire0003
+    - dragon fire0005
+    - dragon fire0009
+    - dragon fire0001
+    - dragon fire0008
+    - dragon fire0004
+    - dragon fire0010
+    - dragon fire0002
+    - dragon fire0006
+    - dragon fire0007
+    spriteTextureGUIDs:
+    - 047026a76feec604abbba5c9dea4b003
+    - 06e2df55a16ee4e488475c17105c6f91
+    - 07b159b18a06aa54481cb0b31d5a802e
+    - 1c9947e141fa20944b5fe6d4f32907b9
+    - 6a2e7d79814b31d41adbab9bfd02eb9f
+    - 886fa05a68938ae4ba126c05b4343db0
+    - 8f07ac5d97d531c40b9a8d7d8192f464
+    - a98ba88fa9cd50e43a8aa72bfe51ff02
+    - dd76ea71237cd454b9f97fe0373c4cb4
+    - fe03754368e2b5a4ab205831cd24edbc
+    spriteTextureTimeStamps:
+    - 1379218072
+    - 1379218072
+    - 1379218073
+    - 1379218072
+    - 1379218073
+    - 1379218072
+    - 1379218073
+    - 1379218072
+    - 1379218073
+    - 1379218073
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
