@@ -181,7 +181,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (isShoving) return "Shove";
 		else if (inAir || isJumping) return "Jump";
 		else if (isGrounded) return "Run";
-		else if (isDragonBoosted) return "Boosted";
+		else if (isDragonBoosted) return "Fire";
 		else return "Stand";
 	}
 }
