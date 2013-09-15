@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 	
 	public GameObject heartMeter;
+	public GameObject sceneController;
 	
 	public float currentSpeed = 20.0f;
 	public float runSpeed = 20.0f;
@@ -171,6 +172,8 @@ public class PlayerMovement : MonoBehaviour {
 				renderer.enabled = false;
 				ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, transform.position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
 				localCharcoal.Play();
+				// start scene fade/reset
+				sceneController.GetComponent<SceneControllerScript>().Restart();
 			}
 			
 			if (isStumbling)
