@@ -8,16 +8,17 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 23: {fileID: 2300000}
   - 33: {fileID: 3300000}
-  - 114: {fileID: 11400002}
+  - 23: {fileID: 2300000}
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
   - 65: {fileID: 6500000}
+  - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
-  m_Layer: 8
-  m_Name: Dragon
-  m_TagString: Dragon
+  - 114: {fileID: 11400006}
+  m_Layer: 0
+  m_Name: Player_playtest
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +30,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.8672237, y: 1.79999995, z: 0}
+  m_LocalPosition: {x: 10.4478159, y: -6.5999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -45,7 +46,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 891400670fc29cd4aa69c7ba83eb9b22, type: 2}
+  - {fileID: 2100000, guid: 2d37f8d9d297e7740b2ba478c9f3f5c0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -67,12 +68,12 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 72
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 120
+  m_CollisionDetection: 1
 --- !u!65 &6500000
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -83,35 +84,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 27.7000008, y: 24.3199997, z: .200000003}
-  m_Center: {x: 6.23999977, y: 0, z: 0}
+  m_Size: {x: 7.35000038, y: 8.25, z: 2}
+  m_Center: {x: 2.875, y: -.375, z: 0}
 --- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ae23b9c5793b442a04344d0312e511, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireSound1: {fileID: 8300000, guid: 155c370c7a5f7ee439b836a22a934690, type: 3}
-  fireSound2: {fileID: 8300000, guid: 79e9ba815be50a840924a1c26e0d3177, type: 3}
-  footStep1: {fileID: 8300000, guid: 8f377868d840238459bfe89c60aff470, type: 3}
-  footStep2: {fileID: 8300000, guid: 91761292efeedf046b80b2a3f2ee9608, type: 3}
-  footStep3: {fileID: 8300000, guid: 44929ec5677db2b4195338f0df609400, type: 3}
-  currentSpeed: 23
-  normalSpeed: 23
-  minSpeed: 8
-  speedDecrement: 13
-  speedIncrement: .200000003
-  isActivated: 0
-  isHit: 0
-  moveDirection: {x: 0, y: 0}
-  charcoalParticleEffect: {fileID: 19800000, guid: cd547d79643a97f4896056c0e2c7378b,
-    type: 2}
---- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -122,15 +97,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: 4bd103b4abf964e4cb87d8d4bf397895, type: 2}
+  collection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 5
+  _spriteId: 11
   boxCollider: {fileID: 6500000}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
-  renderLayer: 1
+  renderLayer: 10
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9ec48186e004b4fa8088f751e24e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartMeter: {fileID: 0}
+  currentSpeed: 20
+  runSpeed: 20
+  jumpSpeed: 18
+  stumbleSpeed: 15
+  recoverSpeed: .600000024
+  dragonBoostSpeed: 40
+  dragonRecoverySpeed: 1
+  gravity: -.699999988
+  currentGravity: 0
+  rayOffset: -.100000001
+  isActivated: 0
+  isGrounded: 0
+  isJumping: 0
+  inAir: 0
+  isHit: 0
+  isStumbling: 0
+  isDragonBoosted: 0
+  isThrowing: 0
+  isShoving: 0
+  moveDirection: {x: 0, y: 0}
+  jumpDirection: {x: 0, y: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -142,9 +150,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e54113e5604435b8ae87c7754f2725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  library: {fileID: 11400000, guid: 2f105d2d1528b38469fc31657f8a2247, type: 2}
-  defaultClipId: 0
-  playAutomatically: 0
+  library: {fileID: 11400000, guid: 750e38f2a813bbf479215a554b779af6, type: 2}
+  defaultClipId: 1
+  playAutomatically: 1
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b783f5ac3a77b4eaa9deb6a0b204a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
