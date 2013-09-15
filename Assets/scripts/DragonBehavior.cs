@@ -87,7 +87,7 @@ public class DragonBehavior : MonoBehaviour {
 		if (fireTag.Equals("Throwable"))
 		{
 			Vector3 position = fireHitObject.transform.position;
-			
+			position.z = charcoalParticleEffect.transform.position.z;
 			// KILL THE PEASANTS
 			Destroy(fireHitObject);
 			
@@ -121,6 +121,7 @@ public class DragonBehavior : MonoBehaviour {
 			anim.AnimationCompleted = FireCompleteDelegate;
 			anim.AnimationEventTriggered = FlameOnDelegate;
 			anim.Play("Fire");
+			fireHitObject = collider.gameObject;
 		}
 	}
 }
