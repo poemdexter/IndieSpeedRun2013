@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class DragonBehavior : MonoBehaviour {
+	public AudioClip fireSound1, fireSound2, footStep1, footStep2, footStep3;
 	public float currentSpeed = 23.0f;	//current speed
 	public float normalSpeed = 23.0f;	//normal speed
 	public float minSpeed = 8.0f;		//absolute minimum speed
@@ -10,21 +12,35 @@ public class DragonBehavior : MonoBehaviour {
 	
 	public bool isActivated = false;	//dragon doesn't start running until this is true
 	public bool isHit = false;
-	public bool eatKing = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	
-	tk2dSpriteAnimator anim;
+	private List<AudioClip> fireSounds = new List<AudioClip>();
+	private List<AudioClip> footSteps = new List<AudioClip>();
+	
+	private GameObject fireHitObject;
+	public ParticleSystem charcoalParticleEffect;
+	
+	private tk2dSpriteAnimator anim;
 	
 	void Start()
 	{
 		anim = GetComponent<tk2dSpriteAnimator>();
+		
+		fireSounds.Add(fireSound1);
+		fireSounds.Add(fireSound2);
+		
+		footSteps.Add (footStep1);
+		footSteps.Add (footStep2);
+		footSteps.Add (footStep3);
 	}
 	
 	public void Activate()
 	{
 		isActivated = true;
 		anim.Play();
+		anim.AnimationEventTriggered = FlameOnDelegate;
+		anim.AnimationCompleted = FireCompleteDelegate;
 	}
 	
 	void Update ()
@@ -68,8 +84,42 @@ public class DragonBehavior : MonoBehaviour {
 	// done breathing fire, just walk again
 	void FireCompleteDelegate(tk2dSpriteAnimator sprite, tk2dSpriteAnimationClip clip)
 	{
-		anim.Play("Walk");
+		if(clip.name.Equals("Fire"))
+		{
+			anim.Play("Walk");
+		}
 	}
+	
+	void FlameOnDelegate(tk2dSpriteAnimator animator, tk2dSpriteAnimationClip clip, int frameNumber)
+	{
+		if(clip.GetFrame(frameNumber).eventInfo.Equals("FlameOn"))
+		{
+			string fireTag = fireHitObject.tag;
+			
+			if (fireTag.Equals("Throwable"))
+			{
+				Vector3 position = fireHitObject.transform.position;
+				position.z = charcoalParticleEffect.transform.position.z;
+				
+				// KILL THE PEASANTS
+				Destroy(fireHitObject);
+				
+				// BURNINATE THE PEASANTS (particle effects)
+				ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
+				localCharcoal.Play();
+			}
+			else if (fireTag.Equals("Player"))
+			{
+				// TODO: tell player to get bumped
+			}
+		}
+		
+		if(clip.GetFrame(frameNumber).eventInfo.Equals("DragonFootStep"))
+		{
+			AudioSource.PlayClipAtPoint(footSteps[Random.Range( 0, footSteps.Count )], transform.position);
+		}
+	}
+	
 	
 	void OnTriggerEnter(Collider collider)
 	{
@@ -77,21 +127,17 @@ public class DragonBehavior : MonoBehaviour {
 		
 		if(collider.gameObject.CompareTag("Throwable") && collider.gameObject.GetComponent<ThrowableObject>().hasBeenThrown())
 		{
-//			Debug.Log("obj hit dragon");
 			isHit = true;
-			anim.AnimationCompleted = FireCompleteDelegate;
 			anim.Play("Fire");
-			Destroy(collider.gameObject);
+			fireHitObject = collider.gameObject;
+			
+			// play fire breath sound
+			AudioSource.PlayClipAtPoint(fireSounds[Random.Range( 0, fireSounds.Count )], transform.position);
 		}
-		
-		if(collider.gameObject.CompareTag("Player")) 
+		else if(collider.gameObject.CompareTag("Player")) 
 		{
-			eatKing = true;
+			anim.Play("Fire");
+			fireHitObject = collider.gameObject;
 		}
-	}
-	
-	public bool canEatKing() 
-	{
-		return eatKing;
 	}
 }

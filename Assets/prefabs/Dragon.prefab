@@ -15,9 +15,9 @@ GameObject:
   - 54: {fileID: 5400000}
   - 65: {fileID: 6500000}
   - 114: {fileID: 11400004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dragon
-  m_TagString: Untagged
+  m_TagString: Dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 2, z: 0}
+  m_LocalPosition: {x: -28.8672237, y: 1.79999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -45,7 +45,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 210b6e0557fac904aaf5e8a0b3ad6c96, type: 2}
+  - {fileID: 2100000, guid: 891400670fc29cd4aa69c7ba83eb9b22, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -71,7 +71,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 72
   m_CollisionDetection: 0
 --- !u!65 &6500000
 BoxCollider:
@@ -83,8 +83,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 16.4560013, y: 9.98799992, z: .200000003}
-  m_Center: {x: -.275000006, y: .0440001674, z: 0}
+  m_Size: {x: 27.7000008, y: 24.3199997, z: .200000003}
+  m_Center: {x: 6.23999977, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,14 +96,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ae23b9c5793b442a04344d0312e511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSpeed: 11
-  normalSpeed: 11
-  minSpeed: 7
-  speedDecrement: 5
-  speedIncrement: .100000001
+  fireSound1: {fileID: 8300000, guid: 155c370c7a5f7ee439b836a22a934690, type: 3}
+  fireSound2: {fileID: 8300000, guid: 79e9ba815be50a840924a1c26e0d3177, type: 3}
+  currentSpeed: 23
+  normalSpeed: 23
+  minSpeed: 8
+  speedDecrement: 15
+  speedIncrement: .200000003
+  isActivated: 0
   isHit: 0
-  eatKing: 0
   moveDirection: {x: 0, y: 0}
+  charcoalParticleEffect: {fileID: 19800000, guid: cd547d79643a97f4896056c0e2c7378b,
+    type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,10 +119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: 127c3166f8853664cbeccdbee41c8fe8, type: 2}
+  collection: {fileID: 11400000, guid: 4bd103b4abf964e4cb87d8d4bf397895, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 1
+  _spriteId: 5
   boxCollider: {fileID: 6500000}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -137,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   library: {fileID: 11400000, guid: 2f105d2d1528b38469fc31657f8a2247, type: 2}
   defaultClipId: 0
-  playAutomatically: 1
+  playAutomatically: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
