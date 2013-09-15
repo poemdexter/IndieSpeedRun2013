@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throwVector: {x: -300, y: 400}
   throwRotation: 200
+  thrown: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: .246563524, y: .297950596, z: 1}
+  _scale: {x: .200000003, y: .200000003, z: 1}
   _spriteId: 21
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}

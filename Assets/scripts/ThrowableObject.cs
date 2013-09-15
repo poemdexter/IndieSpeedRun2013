@@ -28,10 +28,10 @@ public class ThrowableObject : MonoBehaviour {
 		{
 			if(pointer.transform.position.y > -0.3)
 			{
-				pointerVector = new Vector3(0,-0.1f,0);
+				pointerVector = new Vector3(0,-0.05f,0);
 			}
 			if(pointer.transform.position.y < -1){
-				pointerVector = new Vector3(0,0.1f,0);
+				pointerVector = new Vector3(0,0.05f,0);
 			}
 			pointer.transform.Translate(pointerVector);
 		}
