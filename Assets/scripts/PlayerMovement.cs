@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour {
 	public float gravity = -1f;
 	public float currentGravity = 0;
 	
+	public bool isActivated = false;	// player doesn't start running until this is true
 	public bool isGrounded = false;
 	public bool isJumping = false;
 	public bool inAir = false;
@@ -32,34 +33,42 @@ public class PlayerMovement : MonoBehaviour {
 		
 	}
 	
+	public void Activate()
+	{
+		isActivated = true;
+	}
+	
 	void Update()
 	{
-		if(isGrounded && Input.GetKeyDown(KeyCode.X))	// is throwing if key pressed while on ground
+		if(isActivated)
 		{
-			isThrowing = true;
+			if(isGrounded && Input.GetKeyDown(KeyCode.X))	// is throwing if key pressed while on ground
+			{
+				isThrowing = true;
+			}
+			else
+			{
+				isThrowing = false;
+			}
+			
+			if (IsGrounded())
+			{
+				isGrounded = true;
+				isJumping = false;
+				inAir = false;
+				currentGravity = 0;
+				jumpDirection = Vector2.zero;
+			}
+			else if (!inAir) // first frame of jump
+			{
+				inAir = true;
+				isGrounded = false;
+				isThrowing = false;		// no throwing while jumping
+				currentGravity = gravity;
+			}
+			
+			CalculateMoveDirection();
 		}
-		else
-		{
-			isThrowing = false;
-		}
-		
-		if (IsGrounded())
-		{
-			isGrounded = true;
-			isJumping = false;
-			inAir = false;
-			currentGravity = 0;
-			jumpDirection = Vector2.zero;
-		}
-		else if (!inAir) // first frame of jump
-		{
-			inAir = true;
-			isGrounded = false;
-			isThrowing = false;		// no throwing while jumping
-			currentGravity = gravity;
-		}
-		
-		CalculateMoveDirection();
 	}
 	
 	void CalculateMoveDirection()

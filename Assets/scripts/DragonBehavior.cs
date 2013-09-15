@@ -8,14 +8,23 @@ public class DragonBehavior : MonoBehaviour {
 	public float speedDecrement = 15.0f; //rate at which speed is decremented.
 	public float speedIncrement = 0.2f; //rate at which the speed increases after decrement
 	
+	public bool isActivated = false;	//dragon doesn't start running until this is true
 	public bool isHit = false;
 	public bool eatKing = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	
+	public void Activate()
+	{
+		isActivated = true;
+	}
+	
 	void Update ()
 	{
-		calculateMoveRate();
+		if(isActivated)
+		{
+			calculateMoveRate();
+		}
 	}
 	
 	void calculateMoveRate() 

@@ -1059,6 +1059,7 @@ MonoBehaviour:
   minSpeed: 8
   speedDecrement: 15
   speedIncrement: .200000003
+  isActivated: 0
   isHit: 0
   eatKing: 0
   moveDirection: {x: 0, y: 0}
@@ -1145,6 +1146,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae6647d1e3b1d894eb1677c619294cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneController: {fileID: 841688809}
+--- !u!1 &841688809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 841688810}
+  - 114: {fileID: 841688811}
+  m_Layer: 0
+  m_Name: SceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &841688810
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 841688809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &841688811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 841688809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40136e17732f7b044a5887a864906943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &841883373
@@ -2339,6 +2379,7 @@ MonoBehaviour:
   dragonRecoverySpeed: 1
   gravity: -.699999988
   currentGravity: 0
+  isActivated: 0
   isGrounded: 0
   isJumping: 0
   inAir: 0
