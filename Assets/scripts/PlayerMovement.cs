@@ -133,7 +133,7 @@ public class PlayerMovement : MonoBehaviour {
 	void OnTriggerStay(Collider collider)
 	{
 		// we are colliding with a throwable object and happen to be throwing, tell the object to get thrown
-		if(collider.CompareTag("Throwable") && isThrowing)
+		if(isThrowing && collider.CompareTag("Throwable") )
 		{
 			collider.gameObject.GetComponent<ThrowableObject>().Throw();
 			isShoving = true;
@@ -143,7 +143,7 @@ public class PlayerMovement : MonoBehaviour {
 	void OnTriggerEnter(Collider collider)
 	{
 		// we hit an obstacle here and need to slow down
-		if(collider.gameObject.CompareTag("Obstacle"))
+		if(currentSpeed == runSpeed && collider.gameObject.CompareTag("Obstacle") )
 		{
 			currentSpeed -= stumbleSpeed; // we need to slow our speed
 			isStumbling = true; // and flag as stumbling so we can recover
