@@ -46,11 +46,11 @@ public class HeartMeterScript : MonoBehaviour {
 		if(IsHeartMeterEmpty())	// check is made later so the heart sprite changes before scene restarts
 		{
 			// reset scene
-			sceneController.GetComponent<SceneControllerScript>().Restart();
+			//sceneController.GetComponent<SceneControllerScript>().Restart();
 		}
 	}
 	
-	bool IsHeartMeterEmpty()
+	public bool IsHeartMeterEmpty()
 	{
 		if(currentHearts > 0)
 		{
