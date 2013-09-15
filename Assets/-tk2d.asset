@@ -715,7 +715,7 @@ MonoBehaviour:
     - king run0012
     - king run0003
     - king shove0006
-    - 
+    - HeartFull
     - king run0001
     - ground_yellow
     - king run0004
@@ -752,11 +752,12 @@ MonoBehaviour:
     - king shove0004
     - king shove0003
     - king shove0002
+    - HeartEmpty
     spriteTextureGUIDs:
     - 7c09b2abe2088874cbfa26a7cdd6a8e1
     - 8c4aa471511a64541939bc959e74eb4b
     - 34744f23d1084af4fb29d0cfea6fb90f
-    - 
+    - a4b801085f1867d41a75da2c288c2adb
     - 8f1d1fff17479634fa8773b4e0e3ea0f
     - a60f564d3966ded41a8827ac09f54b58
     - 904d28c922f17a741a312f3fd50953f4
@@ -793,11 +794,12 @@ MonoBehaviour:
     - 8c7283bbd7d5d3440938c9d67351bd48
     - 76a96cccadd1f9c43b3b9065226fabaa
     - 807febcf3f66efd459ab74ca258d5d7a
+    - ceac4567e4f34fe4c95aea0efd513939
     spriteTextureTimeStamps:
     - 1379205323.08662
     - 1379205323.02562
     - 1379205323.12163
-    - 0
+    - 1379199404
     - 1379205323.02162
     - 1379207931.00179
     - 1379205323.02662
@@ -834,6 +836,7 @@ MonoBehaviour:
     - 1379205323.11463
     - 1379205323.11163
     - 1379205323.10762
+    - 1379199394
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
