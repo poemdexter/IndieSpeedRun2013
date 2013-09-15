@@ -96,11 +96,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ae23b9c5793b442a04344d0312e511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireSound1: {fileID: 8300000, guid: 155c370c7a5f7ee439b836a22a934690, type: 3}
+  fireSound2: {fileID: 8300000, guid: 79e9ba815be50a840924a1c26e0d3177, type: 3}
   currentSpeed: 11
   normalSpeed: 11
   minSpeed: 7
   speedDecrement: 5
   speedIncrement: .100000001
+  isActivated: 0
   isHit: 0
   eatKing: 0
   moveDirection: {x: 0, y: 0}

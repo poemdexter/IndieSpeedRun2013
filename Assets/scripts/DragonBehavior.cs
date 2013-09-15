@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class DragonBehavior : MonoBehaviour {
+	public AudioClip fireSound1, fireSound2;
 	public float currentSpeed = 23.0f;	//current speed
 	public float normalSpeed = 23.0f;	//normal speed
 	public float minSpeed = 8.0f;		//absolute minimum speed
@@ -14,11 +16,16 @@ public class DragonBehavior : MonoBehaviour {
 	
 	public Vector2 moveDirection = Vector2.zero;
 	
+	private List<AudioClip> fireSounds = new List<AudioClip>();
+	
 	tk2dSpriteAnimator anim;
 	
 	void Start()
 	{
 		anim = GetComponent<tk2dSpriteAnimator>();
+		
+		fireSounds.Add(fireSound1);
+		fireSounds.Add(fireSound2);
 	}
 	
 	public void Activate()
@@ -82,6 +89,9 @@ public class DragonBehavior : MonoBehaviour {
 			anim.AnimationCompleted = FireCompleteDelegate;
 			anim.Play("Fire");
 			Destroy(collider.gameObject);
+			
+			// play fire breath sound
+			AudioSource.PlayClipAtPoint(fireSounds[Random.Range( 0, fireSounds.Count )], transform.position);
 		}
 		
 		if(collider.gameObject.CompareTag("Player")) 

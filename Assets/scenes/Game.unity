@@ -728,7 +728,7 @@ MonoBehaviour:
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
   forceResolutionInEditor: 1
-  forceResolution: {x: 1200, y: 600}
+  forceResolution: {x: 10, y: 10}
 --- !u!20 &437923414
 Camera:
   m_ObjectHideFlags: 3
@@ -939,6 +939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ae23b9c5793b442a04344d0312e511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireSound1: {fileID: 8300000, guid: 155c370c7a5f7ee439b836a22a934690, type: 3}
+  fireSound2: {fileID: 8300000, guid: 79e9ba815be50a840924a1c26e0d3177, type: 3}
   currentSpeed: 23
   normalSpeed: 23
   minSpeed: 8
