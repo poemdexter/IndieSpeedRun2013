@@ -714,7 +714,7 @@ MonoBehaviour:
     spriteNames:
     - king run0012
     - king run0003
-    - enemy_still
+    - 
     - chest_close
     - king run0001
     - ground_yellow
@@ -727,10 +727,10 @@ MonoBehaviour:
     - king run0008
     - king run0005
     - king run0010
-    - 
-    - 
-    - 
-    - 
+    - basket
+    - rock
+    - stump
+    - urn
     - pesant0006
     - stonewall
     - pointer
@@ -749,7 +749,7 @@ MonoBehaviour:
     spriteTextureGUIDs:
     - 7c09b2abe2088874cbfa26a7cdd6a8e1
     - 8c4aa471511a64541939bc959e74eb4b
-    - 2dad0f6f96f3adb45a34699179e6ae09
+    - 
     - b9b18f23cf4478e4e9b2a951b81e9964
     - 8f1d1fff17479634fa8773b4e0e3ea0f
     - a60f564d3966ded41a8827ac09f54b58
@@ -762,10 +762,10 @@ MonoBehaviour:
     - ee59ae52f084b8e46850ec6f6236c5f5
     - f754a6b98423e264fa4e67390771b56b
     - fd15f8d4154d1f24ca4ab8c09e70fc05
-    - 
-    - 
-    - 
-    - 
+    - 040d22c60e42b3e468d753f70f08c5e3
+    - 06e33579dd469e84bb6754158f6230dd
+    - 981710c5649eef94abe4faf43fc0cf06
+    - cb412579f88f0f342883cbc72054124e
     - 0252fbe2bb0e72849934eab23c71f92f
     - f5c51eed1a3c8624fa45c9a581cb32ff
     - b1034c99046f7364599d66b1a4204d5f
@@ -784,7 +784,7 @@ MonoBehaviour:
     spriteTextureTimeStamps:
     - 1379195444
     - 1379195442
-    - 1373043284
+    - 0
     - 1373659197
     - 1379195442
     - 1373033270
@@ -797,10 +797,10 @@ MonoBehaviour:
     - 1379195443
     - 1379195442
     - 1379195443
-    - 0
-    - 0
-    - 0
-    - 0
+    - 1379191184
+    - 1379191199
+    - 1379191170
+    - 1379191157
     - 1379195412
     - 1379149025
     - 1379160880.57743
