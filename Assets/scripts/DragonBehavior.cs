@@ -17,6 +17,7 @@ public class DragonBehavior : MonoBehaviour {
 	public void Activate()
 	{
 		isActivated = true;
+		GetComponent<tk2dSpriteAnimator>().Play();
 	}
 	
 	void Update ()
