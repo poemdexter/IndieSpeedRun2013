@@ -613,7 +613,7 @@ MonoBehaviour:
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
   forceResolutionInEditor: 1
-  forceResolution: {x: 10, y: 10}
+  forceResolution: {x: 1200, y: 600}
 --- !u!20 &437923414
 Camera:
   m_ObjectHideFlags: 3
@@ -2302,6 +2302,8 @@ MonoBehaviour:
   isShoving: 0
   moveDirection: {x: 0, y: 0}
   jumpDirection: {x: 0, y: 0}
+  charcoalParticleEffect: {fileID: 19800000, guid: e0035eb25277b3c44a20e92a9cf85abc,
+    type: 2}
 --- !u!114 &2069652161
 MonoBehaviour:
   m_ObjectHideFlags: 0

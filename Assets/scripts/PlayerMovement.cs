@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour {
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
 	
+	public ParticleSystem charcoalParticleEffect;
+	
 	public void Activate()
 	{
 		isActivated = true;
@@ -161,6 +163,15 @@ public class PlayerMovement : MonoBehaviour {
 			
 			// deplete heart meter
 			heartMeter.GetComponent<HeartMeterScript>().DepleteHearts();
+			
+			// if heart meter is empty, deactivate king and blow him up
+			if(heartMeter.GetComponent<HeartMeterScript>().IsHeartMeterEmpty())
+			{
+				isActivated = false;
+				renderer.enabled = false;
+				ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, transform.position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
+				localCharcoal.Play();
+			}
 			
 			if (isStumbling)
 			{
