@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 	public bool isStumbling = false;
 	public bool isDragonBoosted = false;
 	public bool isThrowing = false;
+	public bool isShoving = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
@@ -123,6 +124,7 @@ public class PlayerMovement : MonoBehaviour {
 		if(collider.CompareTag("Throwable") && isThrowing)
 		{
 			collider.gameObject.GetComponent<ThrowableObject>().Throw();
+			isShoving = true;
 		}
 	}
 	
@@ -165,6 +167,7 @@ public class PlayerMovement : MonoBehaviour {
 	public string GetCurrentState()
 	{
 		if (isStumbling) return "Stumble";
+		if (isShoving) return "Shove";
 		else if (inAir || isJumping) return "Jump";
 		else if (isGrounded) return "Run";
 		else if (isDragonBoosted) return "Boosted";

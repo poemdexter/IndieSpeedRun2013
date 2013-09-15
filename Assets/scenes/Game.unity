@@ -1907,6 +1907,7 @@ MonoBehaviour:
   isStumbling: 0
   isDragonBoosted: 0
   isThrowing: 0
+  isShoving: 0
   moveDirection: {x: 0, y: 0}
   jumpDirection: {x: 0, y: 0}
 --- !u!114 &2069652161
@@ -1980,7 +1981,7 @@ MonoBehaviour:
   lineSpacing: 0
   data:
     version: 1
-    font: {fileID: 11400000, guid: fb1b97eccf6db514999d1605baf017e5, type: 2}
+    font: {fileID: 11400000, guid: fa0d947d2965f084bb6d369be71fba68, type: 2}
     text: Z to jump    X to throw
     color: {r: .119593427, g: .580882311, b: .351828605, a: 1}
     color2: {r: 0, g: 1, b: .0891366005, a: 1}
@@ -2008,7 +2009,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: c588c2d12d3f5514195827aeb65feb8a, type: 2}
+  - {fileID: 2100000, guid: e5c0ad2205185d94da89227857d01078, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2029,7 +2030,7 @@ Transform:
   m_GameObject: {fileID: 2089862408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -15.1414089, z: 10}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 437923409}
 --- !u!1 &2138300887
