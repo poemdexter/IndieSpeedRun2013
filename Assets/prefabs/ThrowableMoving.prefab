@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11400004}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400008}
   m_Layer: 2
   m_Name: ThrowableMoving
   m_TagString: Throwable
@@ -216,6 +217,20 @@ MonoBehaviour:
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
   renderLayer: 0
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e54113e5604435b8ae87c7754f2725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  library: {fileID: 11400000, guid: a72a1e881dff19346b0a12a49ad730d0, type: 2}
+  defaultClipId: 0
+  playAutomatically: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

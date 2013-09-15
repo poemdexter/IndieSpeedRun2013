@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
 	public float dragonRecoverySpeed = 0.8f;
 	public float gravity = -1f;
 	public float currentGravity = 0;
+	public float rayLength = 2.8f;
 	
 	public bool isActivated = false;	// player doesn't start running until this is true
 	public bool isGrounded = false;
@@ -118,11 +119,11 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		Ray ray = new Ray(transform.position, Vector3.down);
 		RaycastHit hit;
-		if (Physics.Raycast(ray, out hit, collider.bounds.extents.y + .1f))
+		if (Physics.Raycast(ray, out hit, rayLength + .1f))
 		{
 			if (hit.collider.gameObject.CompareTag("Ground"))
 			{
-				transform.position = new Vector3(transform.position.x, hit.point.y + collider.bounds.extents.y, 0);
+				transform.position = new Vector3(transform.position.x, hit.point.y + rayLength, 0);
 				return true;
 			}
 		}
