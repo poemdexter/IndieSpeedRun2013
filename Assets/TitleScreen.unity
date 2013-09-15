@@ -976,7 +976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1, y: 1, z: 1}
+  _scale: {x: 2, y: 2, z: 1}
   _spriteId: 11
   boxCollider: {fileID: 1169870008}
   meshCollider: {fileID: 0}
@@ -1043,8 +1043,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 18.2000008, y: 19.3500004, z: 2}
-  m_Center: {x: 6.65000057, y: -1.42500019, z: 0}
+  m_Size: {x: 14.7000008, y: 16.5, z: 2}
+  m_Center: {x: 5.75, y: -.75, z: 0}
 --- !u!1 &1212234993
 GameObject:
   m_ObjectHideFlags: 0
