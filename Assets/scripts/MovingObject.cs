@@ -9,8 +9,8 @@ using System.Collections;
 
 public class MovingObject : MonoBehaviour {
 	
-	public float currentSpeed = 4.0f;
-	public float runSpeed = 4.0f;
+	public float currentSpeed = 10.0f;
+	public float runSpeed = 10.0f;
 	public float jumpSpeed = 5.0f;
 	public float gravity = -0.1f;
 	public float currentGravity = 0;

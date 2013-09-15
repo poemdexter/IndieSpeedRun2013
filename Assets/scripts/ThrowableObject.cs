@@ -8,8 +8,8 @@ using System.Collections;
 
 public class ThrowableObject : MonoBehaviour {
 	
-	public Vector2 throwVector = new Vector2(-300, 400);
-	public float throwRotation = 200;
+	public Vector2 throwVector = new Vector2(-600, 600);
+	public float throwRotation = 400;
 	public bool thrown = false;
 	private tk2dSprite pointer;
 	private Vector3 pointerVector = new Vector3(0,0.1f,0);
@@ -26,12 +26,12 @@ public class ThrowableObject : MonoBehaviour {
 		// animate pointer
 		if(pointer)
 		{
-			if(pointer.transform.position.y > -0.3)
+			if(pointer.transform.localPosition.y > 8)
 			{
-				pointerVector = new Vector3(0,-0.05f,0);
+				pointerVector = new Vector3(0,-0.1f,0);
 			}
-			if(pointer.transform.position.y < -1){
-				pointerVector = new Vector3(0,0.05f,0);
+			if(pointer.transform.localPosition.y < 6){
+				pointerVector = new Vector3(0,0.1f,0);
 			}
 			pointer.transform.Translate(pointerVector);
 		}

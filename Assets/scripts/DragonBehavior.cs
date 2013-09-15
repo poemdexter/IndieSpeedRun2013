@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class DragonBehavior : MonoBehaviour {
-	public float currentSpeed = 13.0f;	//current speed
-	public float normalSpeed = 13.0f;	//normal speed
-	public float minSpeed = 7.0f;		//absolute minimum speed
-	public float speedDecrement = 5.0f; //rate at which speed is decremented.
-	public float speedIncrement = 0.1f; //rate at which the speed increases after decrement
+	public float currentSpeed = 23.0f;	//current speed
+	public float normalSpeed = 23.0f;	//normal speed
+	public float minSpeed = 8.0f;		//absolute minimum speed
+	public float speedDecrement = 15.0f; //rate at which speed is decremented.
+	public float speedIncrement = 0.2f; //rate at which the speed increases after decrement
 	
 	public bool isHit = false;
 	public bool eatKing = false;

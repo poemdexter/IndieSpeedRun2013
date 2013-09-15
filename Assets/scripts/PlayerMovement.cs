@@ -3,14 +3,14 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 	
-	public float currentSpeed = 10.0f;
-	public float runSpeed = 10.0f;
-	public float jumpSpeed = 5.0f;
-	public float stumbleSpeed = 5.0f;
-	public float recoverSpeed = 0.1f;
-	public float dragonBoostSpeed = 10.0f;
-	public float dragonRecoverySpeed = 0.1f;
-	public float gravity = -0.1f;
+	public float currentSpeed = 20.0f;
+	public float runSpeed = 20.0f;
+	public float jumpSpeed = 28.0f;
+	public float stumbleSpeed = 15.0f;
+	public float recoverSpeed = 0.2f;
+	public float dragonBoostSpeed = 50.0f;
+	public float dragonRecoverySpeed = 0.8f;
+	public float gravity = -1f;
 	public float currentGravity = 0;
 	
 	public bool isGrounded = false;
