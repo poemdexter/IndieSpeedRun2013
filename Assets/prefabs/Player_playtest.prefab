@@ -120,14 +120,14 @@ MonoBehaviour:
   heartMeter: {fileID: 0}
   currentSpeed: 20
   runSpeed: 20
-  jumpSpeed: 18
+  jumpSpeed: 21
   stumbleSpeed: 15
   recoverSpeed: .600000024
   dragonBoostSpeed: 40
   dragonRecoverySpeed: 1
   gravity: -.699999988
   currentGravity: 0
-  rayOffset: -.100000001
+  rayOffset: .100000001
   isActivated: 0
   isGrounded: 0
   isJumping: 0
