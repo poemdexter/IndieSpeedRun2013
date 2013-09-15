@@ -11,6 +11,11 @@ public class SceneControllerScript : MonoBehaviour {
 	public AudioClip musicStart;
 	public AudioClip musicLoop;
 	
+	void Alive()
+	{
+		Physics.IgnoreLayerCollision(8,9);
+	}
+	
 	void OnGUI()
 	{
 		if (fading)

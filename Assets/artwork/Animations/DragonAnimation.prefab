@@ -553,8 +553,8 @@ MonoBehaviour:
     - spriteCollection: {fileID: 11400000, guid: abb42fbea0547e04aa3e44b6cd4ba022,
         type: 2}
       spriteId: 9
-      triggerEvent: 0
-      eventInfo: 
+      triggerEvent: 1
+      eventInfo: FlameOn
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: abb42fbea0547e04aa3e44b6cd4ba022,
