@@ -18,7 +18,10 @@ public class DragonBehavior : MonoBehaviour {
 	
 	private List<AudioClip> fireSounds = new List<AudioClip>();
 	
-	tk2dSpriteAnimator anim;
+	private GameObject peasant;
+	public ParticleSystem charcoalParticleEffect;
+	
+	private tk2dSpriteAnimator anim;
 	
 	void Start()
 	{
@@ -78,6 +81,18 @@ public class DragonBehavior : MonoBehaviour {
 		anim.Play("Walk");
 	}
 	
+	void FlameOnDelegate(tk2dSpriteAnimator animator, tk2dSpriteAnimationClip clip, int frameNumber)
+	{
+		Vector3 position = peasant.transform.position;
+		
+		// KILL THE PEASANTS
+		Destroy(peasant);
+		
+		// BURNINATE THE PEASANTS (particle effects)
+		ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
+		localCharcoal.Play();
+	}
+	
 	void OnTriggerEnter(Collider collider)
 	{
 		// we hit an obstacle here and need to slow down
@@ -87,8 +102,9 @@ public class DragonBehavior : MonoBehaviour {
 //			Debug.Log("obj hit dragon");
 			isHit = true;
 			anim.AnimationCompleted = FireCompleteDelegate;
+			anim.AnimationEventTriggered = FlameOnDelegate;
 			anim.Play("Fire");
-			Destroy(collider.gameObject);
+			peasant = collider.gameObject;
 			
 			// play fire breath sound
 			AudioSource.PlayClipAtPoint(fireSounds[Random.Range( 0, fireSounds.Count )], transform.position);
