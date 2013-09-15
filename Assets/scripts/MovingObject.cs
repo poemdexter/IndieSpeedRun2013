@@ -19,6 +19,8 @@ public class MovingObject : MonoBehaviour {
 	public bool isJumping = false;
 	public bool inAir = false;
 	
+	public bool triggered = false;
+	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
 	
@@ -30,22 +32,7 @@ public class MovingObject : MonoBehaviour {
 
 	void Update()
 	{
-		if (IsGrounded())
-		{
-			isGrounded = true;
-			isJumping = false;
-			inAir = false;
-			currentGravity = 0;
-			jumpDirection = Vector2.zero;
-		}
-		else if (!inAir) // first frame of jump
-		{
-			inAir = true;
-			isGrounded = false;
-			currentGravity = gravity;
-		}
-		
-		if(!rigidbody.useGravity)	//Necessary to make throwable objects look nicer
+		if(triggered && !rigidbody.useGravity)	//Necessary to make throwable objects look nicer
 		{
 			CalculateMoveDirection();
 		}
@@ -57,29 +44,12 @@ public class MovingObject : MonoBehaviour {
 	{
 		moveDirection = new Vector2(currentSpeed, 0); // gotta go fast (to the right)
 		
-		// we're moving vertically, start applying gravity
-		if (isJumping || inAir)
-		{
-			jumpDirection += new Vector2(0, currentGravity);
-			moveDirection += jumpDirection;
-		}
-		
 		// move us for real
 		transform.Translate(moveDirection * Time.deltaTime);
 	}
 	
-	bool IsGrounded()
+	void TriggerMe()
 	{
-		Ray ray = new Ray(transform.position, Vector3.down);
-		RaycastHit hit;
-		if (Physics.Raycast(ray, out hit, collider.bounds.extents.y + .1f))
-		{
-			if (hit.collider.gameObject.CompareTag("Ground"))
-			{
-				transform.position = new Vector3(transform.position.x, hit.point.y + collider.bounds.extents.y, 0);
-				return true;
-			}
-		}
-		return false;
+		triggered = true;
 	}
 }

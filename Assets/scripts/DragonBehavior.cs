@@ -13,36 +13,35 @@ public class DragonBehavior : MonoBehaviour {
 	
 	public Vector2 moveDirection = Vector2.zero;
 	
-	void Update (){
-		
-		
+	void Update ()
+	{
 		calculateMoveRate();
 	}
 	
-	void calculateMoveRate() {
+	void calculateMoveRate() 
+	{
 		moveDirection = new Vector2(currentSpeed, 0);
 		
 		//Check if speed == normalSpeed, if not then slowly increase speed until speed = normal speed
-		if(isHit){
+		if (isHit)
+		{
 			currentSpeed = (currentSpeed - speedDecrement < minSpeed) ? minSpeed : currentSpeed - speedDecrement;
 			isHit = false;
-				
 		}
 		
-		if(!isHit && currentSpeed < normalSpeed){
+		if(!isHit && currentSpeed < normalSpeed)
+		{
 			currentSpeed = currentSpeed + speedIncrement;
-			Debug.Log("speed up sucka");
+			// Debug.Log("speed up sucka");
 		}
-			
-		
-		
 		
 		//move dragon
 		transform.Translate(moveDirection * Time.deltaTime);
 	}
 	
 	
-	void reduceSpeed() {
+	void reduceSpeed() 
+	{
 		//called when collision happens.
 		if( currentSpeed > minSpeed)
 			currentSpeed = currentSpeed - speedDecrement;
@@ -50,7 +49,8 @@ public class DragonBehavior : MonoBehaviour {
 			currentSpeed = minSpeed;
 	}
 	
-	void OnTriggerEnter(Collider collider){
+	void OnTriggerEnter(Collider collider)
+	{
 		// we hit an obstacle here and need to slow down
 		
 		if(collider.gameObject.CompareTag("Throwable") && collider.gameObject.GetComponent<ThrowableObject>().hasBeenThrown())
@@ -60,13 +60,14 @@ public class DragonBehavior : MonoBehaviour {
 			Destroy(collider.gameObject);
 		}
 		
-		if(collider.gameObject.CompareTag("Player")) {
+		if(collider.gameObject.CompareTag("Player")) 
+		{
 			eatKing = true;
-			Debug.Log("I eat king!");
 		}
 	}
 	
-	public bool canEatKing() {
+	public bool canEatKing() 
+	{
 		return eatKing;
 	}
 }

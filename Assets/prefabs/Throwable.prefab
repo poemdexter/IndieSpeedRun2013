@@ -46,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .216632247, y: -2.17662573, z: 0}
+  m_LocalPosition: {x: 15.5000095, y: -21.1419754, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -137,8 +137,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.09090519, y: 1.09090519, z: 0}
-  m_Center: {x: -.0779217929, y: -.0779217929, z: 0}
+  m_Size: {x: 6.68000031, y: 7.68000031, z: 2}
+  m_Center: {x: .0600000396, y: .0400001518, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,9 +166,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 523e3c935bab6c047bf394a5bcc2db1d, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: .519478619, y: .519478619, z: 1}
-  _spriteId: 3
-  boxCollider: {fileID: 0}
+  _scale: {x: .800000012, y: .800000012, z: 1}
+  _spriteId: 24
+  boxCollider: {fileID: 6500000}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
