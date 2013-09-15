@@ -714,7 +714,7 @@ MonoBehaviour:
     spriteNames:
     - king run0012
     - king run0003
-    - 
+    - king shove0006
     - chest_close
     - king run0001
     - ground_yellow
@@ -746,10 +746,16 @@ MonoBehaviour:
     - pesant0004
     - pesant0011
     - pesant0005
+    - king shove0005
+    - king shove0001
+    - king shove0007
+    - king shove0004
+    - king shove0003
+    - king shove0002
     spriteTextureGUIDs:
     - 7c09b2abe2088874cbfa26a7cdd6a8e1
     - 8c4aa471511a64541939bc959e74eb4b
-    - 
+    - 34744f23d1084af4fb29d0cfea6fb90f
     - b9b18f23cf4478e4e9b2a951b81e9964
     - 8f1d1fff17479634fa8773b4e0e3ea0f
     - a60f564d3966ded41a8827ac09f54b58
@@ -781,10 +787,16 @@ MonoBehaviour:
     - ab0bac171b9206d4c8d330fb6e0becd2
     - b6e870e67bba0b24dadaf44b4de07ac5
     - dace458d17d2e0944b31c67f178e0bb4
+    - 473372a7c08b9584090f7aa36b9c8144
+    - d15dd2f9afb439d4ca9548c77ae50e9b
+    - 53011c1b02eda7b4980186082d2c1da3
+    - 8c7283bbd7d5d3440938c9d67351bd48
+    - 76a96cccadd1f9c43b3b9065226fabaa
+    - 807febcf3f66efd459ab74ca258d5d7a
     spriteTextureTimeStamps:
     - 1379195444
     - 1379195442
-    - 0
+    - 1379200023
     - 1373659197
     - 1379195442
     - 1373033270
@@ -816,6 +828,12 @@ MonoBehaviour:
     - 1379195411
     - 1379195413
     - 1379195412
+    - 1379200022
+    - 1379200022
+    - 1379200023
+    - 1379200022
+    - 1379200022
+    - 1379200022
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
