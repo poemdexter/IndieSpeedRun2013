@@ -6,7 +6,10 @@ TagManager:
   - Ground
   - Obstacle
   - Throwable
+  - SectionTrigger
+  - 
   - Section 1
+  - Dragon
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
