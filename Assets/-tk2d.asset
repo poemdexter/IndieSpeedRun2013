@@ -721,7 +721,7 @@ MonoBehaviour:
     - king shove0006
     - HeartFull
     - king run0001
-    - ground_yellow
+    - pesant throw
     - king run0004
     - king run0009
     - king run0011
@@ -736,9 +736,9 @@ MonoBehaviour:
     - stump
     - urn
     - pesant0006
-    - 
+    - king but on fire0002
     - pointer
-    - 
+    - king but on fire0003
     - pesant0010
     - pesant0001
     - pesant0007
@@ -759,13 +759,23 @@ MonoBehaviour:
     - HeartEmpty
     - bg tile1
     - ground
+    - king but on fire0001
+    - king but on fire0004
+    - king fall0004
+    - king fall0008
+    - king fall0001
+    - king fall0006
+    - king fall0005
+    - king fall0007
+    - king fall0003
+    - king fall0002
     spriteTextureGUIDs:
     - 7c09b2abe2088874cbfa26a7cdd6a8e1
     - 8c4aa471511a64541939bc959e74eb4b
     - 34744f23d1084af4fb29d0cfea6fb90f
     - a4b801085f1867d41a75da2c288c2adb
     - 8f1d1fff17479634fa8773b4e0e3ea0f
-    - a60f564d3966ded41a8827ac09f54b58
+    - aa38184e2fc11044bbdf4317d9a72772
     - 904d28c922f17a741a312f3fd50953f4
     - b1d3354b0ced9ac43baea47350d66dd3
     - bc9b42691508538438e943d404e3914e
@@ -780,9 +790,9 @@ MonoBehaviour:
     - 981710c5649eef94abe4faf43fc0cf06
     - cb412579f88f0f342883cbc72054124e
     - 0252fbe2bb0e72849934eab23c71f92f
-    - 
+    - 29581056d4b02e4489be49a8c7d490cb
     - b1034c99046f7364599d66b1a4204d5f
-    - 
+    - 3462e61d7c1505245ab4f432022822d2
     - 0271c4a3b3b9b304f887961473b2c41a
     - 0a620184da751a04c84bfb658991061d
     - 628f63899f19b844ebdf09d0a95aa410
@@ -803,13 +813,23 @@ MonoBehaviour:
     - ceac4567e4f34fe4c95aea0efd513939
     - 8a858aba2434f1d4ca90009c8d22258d
     - 80302d5f0b66fae4f8a2142a7bb1c5cf
+    - 490dc4fb4a7ad6945a73986806a76b71
+    - 9836029f7a7ebf5478edf2d8ff261620
+    - 05d76ad2e82291347ae0e84e148179e4
+    - 0723783cc2ff1c2479de8f22ae658c07
+    - 6250a2a0b9b3ede4fb06a9dcdcb44847
+    - 6cb60b760f94631448bd16e90bf56d43
+    - 8f6647cdf41f4fc43b9c103a7cc43f86
+    - b715833b04d34a44993446c1f2c3d94b
+    - d25ec563008da1a4b8c8462bf110cd1e
+    - f3d787dc251fcf44f95ee2fb22dd0626
     spriteTextureTimeStamps:
     - 1379195444
     - 1379195442
     - 1379200023
     - 1379212002.31825
     - 1379195442
-    - 1373033270
+    - 1379246430
     - 1379195442
     - 1379195443
     - 1379195443
@@ -824,9 +844,9 @@ MonoBehaviour:
     - 1379191170
     - 1379191157
     - 1379195412
-    - 0
+    - 1379250544
     - 1379160880.57743
-    - 0
+    - 1379250544
     - 1379195412
     - 1379195411
     - 1379195412
@@ -847,6 +867,16 @@ MonoBehaviour:
     - 1379212002.31625
     - 1379208526.14641
     - 1379213303
+    - 1379250544
+    - 1379250544
+    - 1379255526
+    - 1379255526
+    - 1379255525
+    - 1379255526
+    - 1379255526
+    - 1379255526
+    - 1379255525
+    - 1379255525
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
