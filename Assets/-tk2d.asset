@@ -769,6 +769,8 @@ MonoBehaviour:
     - king fall0007
     - king fall0003
     - king fall0002
+    - castle behind
+    - castle front
     spriteTextureGUIDs:
     - 7c09b2abe2088874cbfa26a7cdd6a8e1
     - 8c4aa471511a64541939bc959e74eb4b
@@ -823,6 +825,8 @@ MonoBehaviour:
     - b715833b04d34a44993446c1f2c3d94b
     - d25ec563008da1a4b8c8462bf110cd1e
     - f3d787dc251fcf44f95ee2fb22dd0626
+    - 3722dc4e11e347b488b6fbd8f094e99c
+    - cdadd8a2efbc8b74a831b5f7bcc04656
     spriteTextureTimeStamps:
     - 1379195444
     - 1379195442
@@ -877,6 +881,8 @@ MonoBehaviour:
     - 1379255526
     - 1379255525
     - 1379255525
+    - 1379266536
+    - 1379266559
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
