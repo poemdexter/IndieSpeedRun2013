@@ -79,5 +79,9 @@ public class ThrowableObject : MonoBehaviour {
 	{
 		return thrown;
 	}
-
+	
+	void TriggerMe()
+	{
+		// empty to prevent errors
+	}
 }

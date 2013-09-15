@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerMovement : MonoBehaviour {
+	
+	public AudioClip jumpSound, painSound1, painSound2;
 	
 	public GameObject heartMeter;
 	public GameObject sceneController;
@@ -31,7 +34,15 @@ public class PlayerMovement : MonoBehaviour {
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
 	
+	private List<AudioClip> painSounds = new List<AudioClip>();
+	
 	public ParticleSystem charcoalParticleEffect;
+	
+	void Start()
+	{
+		painSounds.Add(painSound1);
+		painSounds.Add(painSound2);
+	}
 	
 	public void Activate()
 	{
@@ -95,12 +106,13 @@ public class PlayerMovement : MonoBehaviour {
 			}
 		}
 		
-		// we're on the ground and hit spacebar
+		// we're on the ground and hit z
 		if (isGrounded && Input.GetKeyDown(KeyCode.Z))
 		{
 			isJumping = true;
 			isGrounded = false;
 			jumpDirection += new Vector2(0, jumpSpeed);
+			AudioSource.PlayClipAtPoint(jumpSound, transform.position);
 		}
 		
 		// we're moving vertically, start applying gravity
@@ -147,11 +159,13 @@ public class PlayerMovement : MonoBehaviour {
 			currentSpeed -= stumbleSpeed; // we need to slow our speed
 			isStumbling = true; // and flag as stumbling so we can recover
 			GetComponent<PlayerAnimation>().PlayStumbleOnce();
+			// play king pain sound
+			AudioSource.PlayClipAtPoint(painSounds[Random.Range( 0, painSounds.Count )], transform.position);
 		}
 		
 		if(collider.gameObject.CompareTag("Finish"))
 		{
-			Debug.Log("winner");
+			WinTheGame();
 		}
 		
 		// heart pickup, tell the meter to add health
@@ -170,6 +184,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (collider.gameObject.CompareTag("Dragon"))
 		{			
 			// play king pain sound
+			AudioSource.PlayClipAtPoint(painSounds[Random.Range( 0, painSounds.Count )], transform.position);
 			
 			// deplete heart meter
 			heartMeter.GetComponent<HeartMeterScript>().DepleteHearts();
@@ -206,5 +221,11 @@ public class PlayerMovement : MonoBehaviour {
 			else if (isGrounded) return "Run";
 			else return "Stand";
 		
+	}
+	
+	void WinTheGame()
+	{
+		GameObject.Find("Dragon").GetComponent<DragonBehavior>().Deactivate();
+		GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollowPlayer>().WinAndStopCamera();
 	}
 }

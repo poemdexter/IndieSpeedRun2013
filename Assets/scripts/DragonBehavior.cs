@@ -43,6 +43,12 @@ public class DragonBehavior : MonoBehaviour {
 		anim.AnimationCompleted = FireCompleteDelegate;
 	}
 	
+	public void Deactivate()
+	{
+		isActivated = false;
+		anim.Stop();
+	}
+	
 	void Update ()
 	{
 		if(isActivated)
@@ -138,6 +144,9 @@ public class DragonBehavior : MonoBehaviour {
 		{
 			anim.Play("Fire");
 			fireHitObject = collider.gameObject;
+			
+			// play fire breath sound
+			AudioSource.PlayClipAtPoint(fireSounds[Random.Range( 0, fireSounds.Count )], transform.position);
 		}
 	}
 }

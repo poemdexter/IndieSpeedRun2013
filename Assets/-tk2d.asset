@@ -757,7 +757,7 @@ MonoBehaviour:
     - king shove0003
     - king shove0002
     - HeartEmpty
-    - bg tile1
+    - thewall
     - ground
     - king but on fire0001
     - king but on fire0004
@@ -769,6 +769,8 @@ MonoBehaviour:
     - king fall0007
     - king fall0003
     - king fall0002
+    - castle behind
+    - castle front
     spriteTextureGUIDs:
     - 7c09b2abe2088874cbfa26a7cdd6a8e1
     - 8c4aa471511a64541939bc959e74eb4b
@@ -811,7 +813,7 @@ MonoBehaviour:
     - 76a96cccadd1f9c43b3b9065226fabaa
     - 807febcf3f66efd459ab74ca258d5d7a
     - ceac4567e4f34fe4c95aea0efd513939
-    - 8a858aba2434f1d4ca90009c8d22258d
+    - 1162ff9623613604b875ca967e4e72df
     - 80302d5f0b66fae4f8a2142a7bb1c5cf
     - 490dc4fb4a7ad6945a73986806a76b71
     - 9836029f7a7ebf5478edf2d8ff261620
@@ -823,6 +825,8 @@ MonoBehaviour:
     - b715833b04d34a44993446c1f2c3d94b
     - d25ec563008da1a4b8c8462bf110cd1e
     - f3d787dc251fcf44f95ee2fb22dd0626
+    - 3722dc4e11e347b488b6fbd8f094e99c
+    - cdadd8a2efbc8b74a831b5f7bcc04656
     spriteTextureTimeStamps:
     - 1379195444
     - 1379195442
@@ -865,7 +869,7 @@ MonoBehaviour:
     - 1379200022
     - 1379200022
     - 1379212002.31625
-    - 1379208526.14641
+    - 1379266336.86907
     - 1379213303
     - 1379250544
     - 1379250544
@@ -877,6 +881,8 @@ MonoBehaviour:
     - 1379255526
     - 1379255525
     - 1379255525
+    - 1379266536
+    - 1379266559
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
