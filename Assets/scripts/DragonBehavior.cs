@@ -95,10 +95,11 @@ public class DragonBehavior : MonoBehaviour {
 		if(clip.GetFrame(frameNumber).eventInfo.Equals("FlameOn"))
 		{
 			string fireTag = fireHitObject.tag;
-			position.z = charcoalParticleEffect.transform.position.z;
+			
 			if (fireTag.Equals("Throwable"))
 			{
 				Vector3 position = fireHitObject.transform.position;
+				position.z = charcoalParticleEffect.transform.position.z;
 				
 				// KILL THE PEASANTS
 				Destroy(fireHitObject);
