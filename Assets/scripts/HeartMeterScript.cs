@@ -42,6 +42,25 @@ public class HeartMeterScript : MonoBehaviour {
 		}
 	}
 	
+	// change the last empty heart to full (health pickup)
+	public void IncreaseHearts()
+	{
+		if (currentHearts < maxHearts)
+		{
+			currentHearts++;
+			
+			for(int i = 1; i <= currentHearts; i++)
+			{
+				heart = transform.FindChild("Heart"+i).GetComponent<tk2dSprite>();
+				heart.SetSprite("HeartFull");
+				if(i == currentHearts)
+				{
+					heart.transform.localScale = new Vector3(2, 2, 1);
+				}
+			}
+		}
+	}
+	
 	public bool IsHeartMeterEmpty()
 	{
 		if(currentHearts > 0)

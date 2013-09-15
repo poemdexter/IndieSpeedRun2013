@@ -1,12 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\SceneControllerScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\HeartMeterScript.cs">
     <Files>
       <File FileName="Assets\scripts\SceneControllerScript.cs" Line="49" Column="19" />
-      <File FileName="Assets\scripts\HeartMeterScript.cs" Line="42" Column="4" />
-      <File FileName="Assets\scripts\PlayerMovement.cs" Line="175" Column="30" />
+      <File FileName="Assets\scripts\HeartMeterScript.cs" Line="52" Column="17" />
+      <File FileName="Assets\scripts\PlayerMovement.cs" Line="159" Column="33" />
       <File FileName="Assets\scripts\PlayerAnimation.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\DragonBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\DragonBehavior.cs" Line="97" Column="26" />
       <File FileName="Assets\scripts\ThrowableObject.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\MovingObject.cs" Line="1" Column="1" />
     </Files>

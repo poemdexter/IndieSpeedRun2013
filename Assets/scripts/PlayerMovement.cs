@@ -152,6 +152,13 @@ public class PlayerMovement : MonoBehaviour {
 			Debug.Log("winner");
 		}
 		
+		// heart pickup, tell the meter to add health
+		if(collider.gameObject.CompareTag("HeartPickup"))
+		{
+			heartMeter.GetComponent<HeartMeterScript>().IncreaseHearts();
+			Destroy(collider.gameObject);
+		}
+		
 		// trigger the section so that objects within can start moving
 		if (collider.gameObject.CompareTag("SectionTrigger"))
 		{
