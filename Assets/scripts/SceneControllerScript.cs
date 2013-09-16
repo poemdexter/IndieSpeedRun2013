@@ -17,6 +17,12 @@ public class SceneControllerScript : MonoBehaviour {
 		Physics.IgnoreLayerCollision(8,9);
 	}
 	
+	// ignore collision between player and layer
+	public void IgnoreSignCollision(int layer)
+	{
+		Physics.IgnoreLayerCollision(14, layer);
+	}
+	
 	void OnGUI()
 	{
 		if (fading)

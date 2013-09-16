@@ -7,26 +7,18 @@ using System.Collections;
 
 public class SignScript : MonoBehaviour {
 	
-	private bool isToppling = false;
+	public bool isToppling = false;
 	private Vector3 throwVector = new Vector3(800, 400, 0);
 	private float throwRotation = -120;
-	
-	void Start()
-	{
-		
-	}
-	
-	void Update()
-	{
-		
-	}
 	
 	void OnTriggerEnter(Collider collider)
 	{
 		if(collider.gameObject.CompareTag("Dragon") && !isToppling)
 		{
+			// tell game to ignore this collision
+			GameObject.Find("SceneController").GetComponent<SceneControllerScript>().IgnoreSignCollision(gameObject.layer);
+			
 			isToppling = true;
-			collider.isTrigger = false;
 			rigidbody.isKinematic = false;
 			rigidbody.constraints = RigidbodyConstraints.FreezePositionZ;	// necessary to make object rotate when thrown
 			rigidbody.AddForce(throwVector);
