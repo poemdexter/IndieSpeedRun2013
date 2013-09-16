@@ -227,5 +227,8 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		GameObject.Find("Dragon").GetComponent<DragonBehavior>().Deactivate();
 		GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollowPlayer>().WinAndStopCamera();
+		
+		// FADE OUT
+		Application.LoadLevel(2);
 	}
 }

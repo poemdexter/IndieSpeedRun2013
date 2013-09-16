@@ -4,10 +4,12 @@ using System.Collections;
 public class SceneControllerScript : MonoBehaviour {
 	
 	public bool fading = true;
+	public bool fadeOut = false;
 	public bool isRestarting = false;
 	public Texture2D blackPixel;
 	public float fadeSpeed = -0.2f;
 	public float alpha = 1.0f;
+	public float falpha = 0.0f;
 	
 	public AudioClip musicStart;
 	public AudioClip musicLoop;
@@ -59,6 +61,23 @@ public class SceneControllerScript : MonoBehaviour {
 				}
 			}
 		}
+	}
+	
+	public void FadeOut()
+	{
+		falpha += fadeSpeed * Time.deltaTime;
+			
+			// fade screen
+			GUI.color = new Color(0,0,0,falpha);
+			GUI.depth = 100;
+			GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), blackPixel);
+			
+			// fade music
+			audio.volume = 1 - falpha;
+			
+			// load level if done transition
+			if (falpha >= 1) 
+				Application.LoadLevel(2);
 	}
 		
 	void StartGame()
