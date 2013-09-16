@@ -773,6 +773,9 @@ MonoBehaviour:
     - sign2
     - sign3
     - sign4
+    - castle front
+    - castle behind
+    - groundTile
     spriteTextureGUIDs:
     - 7c09b2abe2088874cbfa26a7cdd6a8e1
     - 8c4aa471511a64541939bc959e74eb4b
@@ -831,6 +834,9 @@ MonoBehaviour:
     - 4080d0da7779dcb4fa0f51b7ff59aa7b
     - f30d3e2549d861d4187250396be96628
     - 9bc526eec50170f4883a369ddd663a0d
+    - cdadd8a2efbc8b74a831b5f7bcc04656
+    - 3722dc4e11e347b488b6fbd8f094e99c
+    - 5f967cffc79f04f4c8990f20155c752e
     spriteTextureTimeStamps:
     - 1379205323.08662
     - 1379205323.02562
@@ -889,6 +895,9 @@ MonoBehaviour:
     - 1379267032
     - 1379267054
     - 1379267071
+    - 1379274113.41762
+    - 1379274113.41462
+    - 1379275699
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
