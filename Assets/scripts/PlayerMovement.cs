@@ -168,9 +168,15 @@ public class PlayerMovement : MonoBehaviour {
 			WinTheGame();
 		}
 		
+		if(collider.gameObject.CompareTag("Done"))
+		{
+			Application.LoadLevel(2);
+		}
+		
 		// heart pickup, tell the meter to add health
 		if(collider.gameObject.CompareTag("HeartPickup"))
 		{
+			Debug.Log("hit");
 			heartMeter.GetComponent<HeartMeterScript>().IncreaseHearts();
 			Destroy(collider.gameObject);
 		}
@@ -227,8 +233,5 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		GameObject.Find("Dragon").GetComponent<DragonBehavior>().Deactivate();
 		GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollowPlayer>().WinAndStopCamera();
-		
-		// FADE OUT
-		Application.LoadLevel(2);
 	}
 }

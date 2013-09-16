@@ -61,11 +61,10 @@ public class SceneControllerScript : MonoBehaviour {
 				}
 			}
 		}
-	}
-	
-	public void FadeOut()
-	{
-		falpha += fadeSpeed * Time.deltaTime;
+		
+		if (fadeOut)
+		{
+			falpha += fadeSpeed * Time.deltaTime;
 			
 			// fade screen
 			GUI.color = new Color(0,0,0,falpha);
@@ -78,6 +77,7 @@ public class SceneControllerScript : MonoBehaviour {
 			// load level if done transition
 			if (falpha >= 1) 
 				Application.LoadLevel(2);
+		}
 	}
 		
 	void StartGame()

@@ -339,6 +339,10 @@ Prefab:
       propertyPath: _spriteId
       value: 54
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
   m_RootGameObject: {fileID: 1568624076}
@@ -1355,6 +1359,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 260131281}
   m_Mesh: {fileID: 0}
+--- !u!1 &263728474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: cede69eb71fe7b9498c9d134519bc37f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 263728476}
+  - 65: {fileID: 263728475}
+  m_Layer: 0
+  m_Name: WinTrigger
+  m_TagString: Done
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &263728475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: cede69eb71fe7b9498c9d134519bc37f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263728474}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .5, y: 5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &263728476
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: cede69eb71fe7b9498c9d134519bc37f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263728474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.8512421, y: -19.9595261, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 938764845}
 --- !u!1 &287964455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,7 +3143,7 @@ MonoBehaviour:
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
   forceResolutionInEditor: 1
-  forceResolution: {x: 1200, y: 600}
+  forceResolution: {x: 10, y: 10}
 --- !u!20 &437923414
 Camera:
   m_ObjectHideFlags: 3
@@ -3236,6 +3280,10 @@ Prefab:
     - target: {fileID: 100000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
       propertyPath: m_Name
       value: Sign1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
@@ -3742,7 +3790,7 @@ GameObject:
   - 65: {fileID: 480259441}
   - 114: {fileID: 480259440}
   - 54: {fileID: 480259439}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sign1
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -7663,12 +7711,13 @@ Transform:
   m_PrefabInternal: {fileID: 1377167663}
   m_GameObject: {fileID: 938764844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2036.72998, y: 13.5, z: 0}
+  m_LocalPosition: {x: 2036.84631, y: 13.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 386576660}
   - {fileID: 1490324458}
   - {fileID: 636837198}
+  - {fileID: 263728476}
   m_Father: {fileID: 0}
 --- !u!1 &954188476
 GameObject:
@@ -10532,6 +10581,10 @@ Prefab:
       propertyPath: _spriteId
       value: 56
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
   m_RootGameObject: {fileID: 1426434066}
@@ -10725,7 +10778,7 @@ GameObject:
   - 65: {fileID: 1320653643}
   - 114: {fileID: 1320653642}
   - 54: {fileID: 1320653641}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Sign3
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -11503,7 +11556,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: cede69eb71fe7b9498c9d134519bc37f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2036.72998
+      value: 2036.84631
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: cede69eb71fe7b9498c9d134519bc37f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -11896,7 +11949,7 @@ GameObject:
   - 65: {fileID: 1426434069}
   - 114: {fileID: 1426434068}
   - 54: {fileID: 1426434067}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sign4
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -13753,7 +13806,7 @@ GameObject:
   - 65: {fileID: 1568624079}
   - 114: {fileID: 1568624078}
   - 54: {fileID: 1568624077}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sign2
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -15942,6 +15995,10 @@ Prefab:
     - target: {fileID: 11400000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
       propertyPath: _spriteId
       value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb09ffd7b7bdd1b478387c9903c776ce, type: 2}
