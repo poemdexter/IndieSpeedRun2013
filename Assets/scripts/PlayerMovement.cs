@@ -128,7 +128,6 @@ public class PlayerMovement : MonoBehaviour {
 	bool IsGrounded()
 	{
 		float halfLength = GetComponentInChildren<Collider>().bounds.extents.y;
-		Debug.Log(halfLength);
 		Ray ray = new Ray(transform.position, Vector3.down);
 		RaycastHit hit;
 		if (Physics.Raycast(ray, out hit, halfLength + .1f))
