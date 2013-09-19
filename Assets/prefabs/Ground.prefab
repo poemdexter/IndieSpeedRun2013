@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -108,8 +108,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2000, y: 1.15999997, z: 1}
-  m_Center: {x: 1000, y: .899999976, z: 0}
+  m_Size: {x: 2087.46802, y: 1, z: 1}
+  m_Center: {x: 1043.73401, y: .899999976, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,7 +130,7 @@ MonoBehaviour:
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
   renderLayer: -1
-  _dimensions: {x: 40000, y: 61}
+  _dimensions: {x: 41561.1484, y: 61}
   _anchor: 0
   _createBoxCollider: 0
 --- !u!1001 &100100000

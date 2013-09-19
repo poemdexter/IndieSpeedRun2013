@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour {
 	public float dragonRecoverySpeed = 0.8f;
 	public float gravity = -1f;
 	public float currentGravity = 0;
-	public float rayOffset = -0.1f;
 	
 	public bool isActivated = false;	// player doesn't start running until this is true
 	public bool isGrounded = false;
@@ -129,13 +128,14 @@ public class PlayerMovement : MonoBehaviour {
 	bool IsGrounded()
 	{
 		float halfLength = GetComponentInChildren<Collider>().bounds.extents.y;
+		
 		Ray ray = new Ray(transform.position, Vector3.down);
 		RaycastHit hit;
-		if (Physics.Raycast(ray, out hit, halfLength + rayOffset + .1f))
+		if (Physics.Raycast(ray, out hit, halfLength + .1f))
 		{
 			if (hit.collider.gameObject.CompareTag("Ground"))
 			{
-				transform.position = new Vector3(transform.position.x, hit.point.y + halfLength + rayOffset, 0);
+				transform.position = new Vector3(transform.position.x, hit.point.y + halfLength, 0);
 				return true;
 			}
 		}
@@ -188,7 +188,7 @@ public class PlayerMovement : MonoBehaviour {
 			collider.gameObject.BroadcastMessage("TriggerMe");
 		}
 		
-		if (collider.gameObject.CompareTag("Dragon"))
+		if (!isDragonBoosted && collider.gameObject.CompareTag("Dragon"))
 		{			
 			// play king pain sound
 			AudioSource.PlayClipAtPoint(painSounds[Random.Range( 0, painSounds.Count )], transform.position);

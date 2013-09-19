@@ -16,7 +16,8 @@ public class SceneControllerScript : MonoBehaviour {
 	
 	void Alive()
 	{
-		Physics.IgnoreLayerCollision(8,9);
+		Physics.IgnoreLayerCollision(8,9); // particles on dragon
+		Physics.IgnoreLayerCollision(15,9); // particles on section triggers
 	}
 	
 	// ignore collision between player and layer
