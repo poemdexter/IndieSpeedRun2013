@@ -176,7 +176,7 @@ public class PlayerMovement : MonoBehaviour {
 		// heart pickup, tell the meter to add health
 		if(collider.gameObject.CompareTag("HeartPickup"))
 		{
-			Debug.Log("hit");
+			//Debug.Log("hit");
 			heartMeter.GetComponent<HeartMeterScript>().IncreaseHearts();
 			Destroy(collider.gameObject);
 		}

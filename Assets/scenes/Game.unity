@@ -3143,7 +3143,7 @@ MonoBehaviour:
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
   forceResolutionInEditor: 1
-  forceResolution: {x: 10, y: 10}
+  forceResolution: {x: 1200, y: 600}
 --- !u!20 &437923414
 Camera:
   m_ObjectHideFlags: 3
@@ -5732,6 +5732,144 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 708107201}
   m_Mesh: {fileID: 0}
+--- !u!43 &713838833
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 60
+    topology: 0
+    firstVertex: 0
+    vertexCount: 12
+    localAABB:
+      m_Center: {x: 2.23749995, y: -.262499809, z: 0}
+      m_Extent: {x: 3.08749986, y: 4.36250019, z: 1}
+  m_Shapes: []
+  m_ShapeVertices: []
+  m_MeshCompression: 0
+  m_StreamCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 0200030000000000030001000400050002000200050003000600070004000400070005000800070006000800090007000a00090008000a000b00090000000b000a00000001000b00060002000a000a0008000600060004000200020000000a000b0003000700070009000b000300050007000b0001000300
+  m_Skin: []
+  m_BindPose: []
+  m_VertexData:
+    m_CurrentChannels: 1
+    m_VertexCount: 12
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_Streams:
+    - channelMask: 1
+      offset: 0
+      stride: 12
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    m_DataSize: 144
+    _typelessdata: 68664e4034338340000080bf68664e40343383400000803fcccc8c3fcccc7440000080bfcccc8c3fcccc74400000803f989959bf333313c0000080bf989959bf333313c00000803fc0ccccbd9a9961c0000080bfc0ccccbd9a9961c00000803f68666640000094c0000080bf68666640000094c00000803f6666aa400000c0bf000080bf6666aa400000c0bf0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BindPoses:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Colors:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+  m_LocalAABB:
+    m_Center: {x: 2.23749995, y: -.262499809, z: 0}
+    m_Extent: {x: 3.08749986, y: 4.36250019, z: 1}
+  m_MeshUsageFlags: 0
+  m_MeshOptimized: 0
 --- !u!1 &724458702
 GameObject:
   m_ObjectHideFlags: 0
@@ -19916,10 +20054,10 @@ GameObject:
   - 23: {fileID: 2069652155}
   - 114: {fileID: 2069652154}
   - 54: {fileID: 2069652158}
-  - 65: {fileID: 2069652159}
   - 114: {fileID: 2069652160}
   - 114: {fileID: 2069652161}
   - 114: {fileID: 2069652162}
+  - 64: {fileID: 2069652159}
   m_Layer: 14
   m_Name: Player
   m_TagString: Player
@@ -19942,10 +20080,22 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
-  boxCollider: {fileID: 2069652159}
-  meshCollider: {fileID: 0}
-  meshColliderPositions: []
-  meshColliderMesh: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 2069652159}
+  meshColliderPositions:
+  - {x: 3.22500038, y: 4.10000038, z: -1}
+  - {x: 3.22500038, y: 4.10000038, z: 1}
+  - {x: 1.0999999, y: 3.82499981, z: -1}
+  - {x: 1.0999999, y: 3.82499981, z: 1}
+  - {x: -.849999905, y: -2.29999995, z: -1}
+  - {x: -.849999905, y: -2.29999995, z: 1}
+  - {x: -.0999999046, y: -3.5250001, z: -1}
+  - {x: -.0999999046, y: -3.5250001, z: 1}
+  - {x: 3.60000038, y: -4.625, z: -1}
+  - {x: 3.60000038, y: -4.625, z: 1}
+  - {x: 5.32499981, y: -1.5, z: -1}
+  - {x: 5.32499981, y: -1.5, z: 1}
+  meshColliderMesh: {fileID: 713838833}
   renderLayer: 10
 --- !u!23 &2069652155
 Renderer:
@@ -19998,8 +20148,8 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 120
   m_CollisionDetection: 1
---- !u!65 &2069652159
-BoxCollider:
+--- !u!64 &2069652159
+MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -20008,8 +20158,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.35000038, y: 8.25, z: 2}
-  m_Center: {x: 2.875, y: -.375, z: 0}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 713838833}
 --- !u!114 &2069652160
 MonoBehaviour:
   m_ObjectHideFlags: 0
