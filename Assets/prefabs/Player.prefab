@@ -12,13 +12,29 @@ GameObject:
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
-  - 65: {fileID: 6500000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400006}
-  m_Layer: 0
-  m_Name: Player_playtest
+  - 64: {fileID: 6400000}
+  m_Layer: 14
+  m_Name: Player
   m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 65: {fileID: 6500000}
+  m_Layer: 0
+  m_Name: KingGroundCollider
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,8 +48,20 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.4478159, y: -6.5999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 400002}
   m_Father: {fileID: 0}
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: -.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
 --- !u!23 &2300000
 Renderer:
   m_ObjectHideFlags: 1
@@ -74,8 +102,8 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 120
   m_CollisionDetection: 1
---- !u!65 &6500000
-BoxCollider:
+--- !u!64 &6400000
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -84,8 +112,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.35000038, y: 8.25, z: 2}
-  m_Center: {x: 2.875, y: -.375, z: 0}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 0}
+--- !u!65 &6500000
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 9, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -101,9 +142,21 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
-  boxCollider: {fileID: 6500000}
-  meshCollider: {fileID: 0}
-  meshColliderPositions: []
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 6400000}
+  meshColliderPositions:
+  - {x: 3.22500038, y: 4.10000038, z: -1}
+  - {x: 3.22500038, y: 4.10000038, z: 1}
+  - {x: 1.0999999, y: 3.82499981, z: -1}
+  - {x: 1.0999999, y: 3.82499981, z: 1}
+  - {x: -.849999905, y: -2.29999995, z: -1}
+  - {x: -.849999905, y: -2.29999995, z: 1}
+  - {x: -.0999999046, y: -3.5250001, z: -1}
+  - {x: -.0999999046, y: -3.5250001, z: 1}
+  - {x: 3.60000038, y: -4.625, z: -1}
+  - {x: 3.60000038, y: -4.625, z: 1}
+  - {x: 5.32499981, y: -1.5, z: -1}
+  - {x: 5.32499981, y: -1.5, z: 1}
   meshColliderMesh: {fileID: 0}
   renderLayer: 10
 --- !u!114 &11400002
@@ -117,15 +170,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9ec48186e004b4fa8088f751e24e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpSound: {fileID: 8300000, guid: d4c683b1a02d2ed41942d43aea75b225, type: 3}
+  painSound1: {fileID: 8300000, guid: 32a811c8b448eba4faf46241fccff2f3, type: 3}
+  painSound2: {fileID: 8300000, guid: 5ab49fa8ddf050d46aa73be237598126, type: 3}
   heartMeter: {fileID: 0}
+  sceneController: {fileID: 0}
   currentSpeed: 20
   runSpeed: 20
-  jumpSpeed: 21
+  jumpSpeed: 28
   stumbleSpeed: 15
   recoverSpeed: .600000024
   dragonBoostSpeed: 40
-  dragonRecoverySpeed: 1
-  gravity: -.699999988
+  dragonRecoverySpeed: .800000012
+  gravity: -1
   currentGravity: 0
   rayOffset: .100000001
   isActivated: 0
@@ -137,8 +194,11 @@ MonoBehaviour:
   isDragonBoosted: 0
   isThrowing: 0
   isShoving: 0
+  hasStumbleAnimated: 0
   moveDirection: {x: 0, y: 0}
   jumpDirection: {x: 0, y: 0}
+  charcoalParticleEffect: {fileID: 19800000, guid: e0035eb25277b3c44a20e92a9cf85abc,
+    type: 2}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

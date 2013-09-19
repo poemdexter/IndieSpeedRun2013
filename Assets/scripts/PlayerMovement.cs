@@ -128,13 +128,14 @@ public class PlayerMovement : MonoBehaviour {
 	
 	bool IsGrounded()
 	{
+		float halfLength = GetComponentInChildren<Collider>().bounds.extents.y;
 		Ray ray = new Ray(transform.position, Vector3.down);
 		RaycastHit hit;
-		if (Physics.Raycast(ray, out hit, collider.bounds.extents.y + rayOffset + .1f))
+		if (Physics.Raycast(ray, out hit, halfLength + rayOffset + .1f))
 		{
 			if (hit.collider.gameObject.CompareTag("Ground"))
 			{
-				transform.position = new Vector3(transform.position.x, hit.point.y + collider.bounds.extents.y + rayOffset, 0);
+				transform.position = new Vector3(transform.position.x, hit.point.y + halfLength + rayOffset, 0);
 				return true;
 			}
 		}

@@ -103,10 +103,11 @@ MonoBehaviour:
       points:
       - {x: 195.5, y: 18}
       - {x: 153, y: 25}
-      - {x: 116, y: 139.5}
-      - {x: 129, y: 170}
-      - {x: 205.5, y: 192}
-      - {x: 234.5, y: 127.5}
+      - {x: 126, y: 77}
+      - {x: 109.5, y: 146}
+      - {x: 128.5, y: 174.5}
+      - {x: 207.5, y: 192.5}
+      - {x: 243, y: 132}
     polyColliderCap: 1
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
@@ -273,16 +274,12 @@ MonoBehaviour:
     polyColliderIslands:
     - connected: 1
       points:
-      - {x: 104.5, y: 138}
-      - {x: 146.5, y: 176.5}
-      - {x: 175, y: 193}
-      - {x: 194.5, y: 188}
-      - {x: 190, y: 166}
-      - {x: 216, y: 154.5}
-      - {x: 244.5, y: 132.5}
+      - {x: 110, y: 137.5}
+      - {x: 149, y: 181}
+      - {x: 190, y: 194.5}
+      - {x: 245.5, y: 136.5}
       - {x: 199, y: 34}
       - {x: 153.5, y: 33.5}
-      - {x: 124, y: 71.5}
     polyColliderCap: 1
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
@@ -412,7 +409,7 @@ MonoBehaviour:
       - {x: 197, y: 20.5}
       - {x: 153.5, y: 24.5}
       - {x: 122, y: 148}
-      - {x: 141, y: 182}
+      - {x: 140.5, y: 191.5}
       - {x: 230.5, y: 178.5}
       - {x: 237, y: 130}
     polyColliderCap: 1
@@ -457,8 +454,10 @@ MonoBehaviour:
     - connected: 1
       points:
       - {x: 155, y: 23}
-      - {x: 120.5, y: 167.5}
-      - {x: 238.5, y: 177}
+      - {x: 120, y: 82}
+      - {x: 119, y: 173}
+      - {x: 247, y: 179}
+      - {x: 235, y: 82.5}
       - {x: 196, y: 20.5}
     polyColliderCap: 1
     colliderConvex: 0
@@ -503,10 +502,10 @@ MonoBehaviour:
       points:
       - {x: 198.5, y: 34.5}
       - {x: 152, y: 34.5}
-      - {x: 112.5, y: 137}
-      - {x: 150, y: 180}
-      - {x: 195, y: 190.5}
-      - {x: 238.5, y: 127.5}
+      - {x: 110, y: 137}
+      - {x: 149, y: 184}
+      - {x: 194, y: 192.5}
+      - {x: 246.5, y: 128}
     polyColliderCap: 1
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
@@ -550,8 +549,8 @@ MonoBehaviour:
       points:
       - {x: 153.5, y: 29}
       - {x: 115, y: 139.5}
-      - {x: 154.5, y: 190.5}
-      - {x: 182.5, y: 194.5}
+      - {x: 161, y: 194.5}
+      - {x: 199.5, y: 179}
       - {x: 242, y: 133}
       - {x: 194.5, y: 29}
     polyColliderCap: 1
@@ -646,8 +645,8 @@ MonoBehaviour:
       - {x: 152, y: 36}
       - {x: 120.5, y: 139}
       - {x: 152, y: 186.5}
-      - {x: 184, y: 193}
-      - {x: 236, y: 135.5}
+      - {x: 169.5, y: 194}
+      - {x: 244, y: 136.5}
     polyColliderCap: 1
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
@@ -2537,7 +2536,7 @@ MonoBehaviour:
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
-  editorDisplayScale: 1.2700001
+  editorDisplayScale: 1.90000033
   version: 4
   assetName: 
 --- !u!1001 &100100000
