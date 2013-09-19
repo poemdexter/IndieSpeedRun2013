@@ -116,7 +116,8 @@ public class DragonBehavior : MonoBehaviour {
 			}
 			else if (fireTag.Equals("Player"))
 			{
-				// TODO: tell player to get bumped
+				// fire fully on ground, lets activate the ouch for player
+				fireHitObject.GetComponent<PlayerMovement>().getHitByDragon();
 			}
 		}
 		
@@ -142,11 +143,14 @@ public class DragonBehavior : MonoBehaviour {
 		}
 		else if(collider.gameObject.CompareTag("Player")) 
 		{
-			anim.Play("Fire");
 			fireHitObject = collider.gameObject;
 			
-			// play fire breath sound
-			AudioSource.PlayClipAtPoint(fireSounds[Random.Range( 0, fireSounds.Count )], transform.position);
+			if (!fireHitObject.GetComponent<PlayerMovement>().isDragonBoosted)
+			{
+				// play fire breath sound and animation
+				anim.Play("Fire");
+				AudioSource.PlayClipAtPoint(fireSounds[Random.Range( 0, fireSounds.Count )], transform.position);
+			}
 		}
 	}
 }

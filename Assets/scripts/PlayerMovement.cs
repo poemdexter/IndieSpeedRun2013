@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour {
 	bool IsGrounded()
 	{
 		float halfLength = GetComponentInChildren<Collider>().bounds.extents.y;
-		
+		Debug.Log(halfLength);
 		Ray ray = new Ray(transform.position, Vector3.down);
 		RaycastHit hit;
 		if (Physics.Raycast(ray, out hit, halfLength + .1f))
@@ -187,36 +187,36 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			collider.gameObject.BroadcastMessage("TriggerMe");
 		}
+	}
+	
+	public void getHitByDragon()
+	{
+		// play king pain sound
+		AudioSource.PlayClipAtPoint(painSounds[Random.Range( 0, painSounds.Count )], transform.position);
 		
-		if (!isDragonBoosted && collider.gameObject.CompareTag("Dragon"))
-		{			
-			// play king pain sound
-			AudioSource.PlayClipAtPoint(painSounds[Random.Range( 0, painSounds.Count )], transform.position);
-			
-			// deplete heart meter
-			heartMeter.GetComponent<HeartMeterScript>().DepleteHearts();
-			
-			// if heart meter is empty, deactivate king and blow him up
-			if(heartMeter.GetComponent<HeartMeterScript>().IsHeartMeterEmpty())
-			{
-				isActivated = false;
-				renderer.enabled = false;
-				ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, transform.position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
-				localCharcoal.Play();
-				// start scene fade/reset
-				sceneController.GetComponent<SceneControllerScript>().Restart();
-			}
-			
-			if (isStumbling)
-			{
-				isStumbling = false;
-				currentSpeed = runSpeed;
-			}
-			
-			// TODO: Move this to triggered event
-			currentSpeed += dragonBoostSpeed;	// speed up a bit to get away from the dragon
-			isDragonBoosted = true;	// flag as boosted by dragon so we can slow down
+		// deplete heart meter
+		heartMeter.GetComponent<HeartMeterScript>().DepleteHearts();
+		
+		// if heart meter is empty, deactivate king and blow him up
+		if(heartMeter.GetComponent<HeartMeterScript>().IsHeartMeterEmpty())
+		{
+			isActivated = false;
+			renderer.enabled = false;
+			ParticleSystem localCharcoal = GameObject.Instantiate(charcoalParticleEffect, transform.position, charcoalParticleEffect.transform.rotation) as ParticleSystem;
+			localCharcoal.Play();
+			// start scene fade/reset
+			sceneController.GetComponent<SceneControllerScript>().Restart();
 		}
+		
+		if (isStumbling)
+		{
+			isStumbling = false;
+			currentSpeed = runSpeed;
+		}
+		
+		// TODO: Move this to triggered event
+		currentSpeed += dragonBoostSpeed;	// speed up a bit to get away from the dragon
+		isDragonBoosted = true;	// flag as boosted by dragon so we can slow down
 	}
 	
 	// return values match animation clip names
@@ -230,6 +230,7 @@ public class PlayerMovement : MonoBehaviour {
 		
 	}
 	
+	// stop camera and dragon until player hits the Done trigger
 	void WinTheGame()
 	{
 		GameObject.Find("Dragon").GetComponent<DragonBehavior>().Deactivate();
