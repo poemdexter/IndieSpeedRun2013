@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour {
 	public float dragonRecoverySpeed = 0.8f;
 	public float gravity = -1f;
 	public float currentGravity = 0;
+	public float swipeTime = 0;
+	public float swipeDeltaY = 0;
 	
 	public bool isActivated = false;	// player doesn't start running until this is true
 	public bool isGrounded = false;
@@ -29,6 +31,7 @@ public class PlayerMovement : MonoBehaviour {
 	public bool isThrowing = false;
 	public bool isShoving = false;
 	public bool hasStumbleAnimated = false;
+	public bool swipeJump = false;
 	
 	public Vector2 moveDirection = Vector2.zero;
 	public Vector2 jumpDirection = Vector2.zero;
@@ -49,10 +52,16 @@ public class PlayerMovement : MonoBehaviour {
 	}
 	
 	void Update()
-	{
+	{		
 		if(isActivated)
 		{
-			if(isGrounded && Input.GetKeyDown(KeyCode.X))	// is throwing if key pressed while on ground
+			if(isGrounded && 
+				(
+					Input.GetKeyDown(KeyCode.X)	// is throwing if key pressed while on ground
+					||
+					(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)	// is throwing if screen is tapped while on ground
+				)
+			)
 			{
 				isThrowing = true;
 			}
@@ -75,6 +84,39 @@ public class PlayerMovement : MonoBehaviour {
 				isGrounded = false;
 				isThrowing = false;		// no throwing while jumping
 				currentGravity = gravity;
+			}
+			
+			// Swipe Jump Handling
+			/*
+			 * If a touch begins, initialize swipeTime and swipeDeltaY to 0.
+			 * While the touch is happening, increment swipeDeltaY accordingly.
+			 * If swipeDeltaY exceeds some given value within a given swipeTime
+			 * after the swipe has ended, set swipeJump to true.
+			 * (Don't forget to set it to false later once handled.)
+			 */
+			if(Input.touchCount > 0)
+			{
+				if(Input.GetTouch(0).phase == TouchPhase.Began)
+				{
+					swipeTime = Time.time;
+					swipeDeltaY = 0;
+				}
+				
+				if(Input.GetTouch(0).phase == TouchPhase.Moved)
+				{
+					swipeDeltaY += Input.GetTouch(0).deltaPosition.y;
+				}
+				
+				if(Input.GetTouch(0).phase == TouchPhase.Ended)
+				{
+					float timeHeld = Time.time - swipeTime;
+					if((timeHeld > 0 && timeHeld < 0.5f) && swipeDeltaY > 25 && isGrounded)
+					{
+						swipeJump = true;
+					}
+					swipeTime = 0;
+					swipeDeltaY = 0;
+				}
 			}
 			
 			CalculateMoveDirection();
@@ -106,8 +148,15 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		
 		// we're on the ground and hit z
-		if (isGrounded && Input.GetKeyDown(KeyCode.Z))
+		if (isGrounded && 
+			(
+				Input.GetKeyDown(KeyCode.Z)
+				||
+				(swipeJump)
+			)
+		)
 		{
+			swipeJump = false;
 			isJumping = true;
 			isGrounded = false;
 			jumpDirection += new Vector2(0, jumpSpeed);
