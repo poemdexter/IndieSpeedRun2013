@@ -936,11 +936,19 @@ MonoBehaviour:
         x: 272
         y: 208
         width: 100
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Run Again
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.Tk2dResumeAnimation
@@ -1005,6 +1013,67 @@ MonoBehaviour:
         - clipName
         paramDataPos: 00000000010000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000
+    - name: Run Again
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 272
+        y: 256
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Translate
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 1d4debbb
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000000000000000000010000604100000000000000000000000100000001010000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001c0000000f0000000f0000000f0000000700000001000000010000000100000001000000
+        paramName:
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - perSecond
+        - everyFrame
+        - lateUpdate
+        - fixedUpdate
+        paramDataPos: 00000000000000000d00000012000000170000001c00000020000000210000002200000023000000
+        paramByteDataSize: 000000000d0000000500000005000000050000000400000001000000010000000100000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -1068,7 +1137,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 225319752}
   - 114: {fileID: 225319751}
-  - 114: {fileID: 225319753}
   m_Layer: 0
   m_Name: StateController
   m_TagString: Untagged
@@ -1322,16 +1390,26 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.Tk2dTextMeshSetColors
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: eec9d968eec9d968
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000008000000
+        actionHashCodes: eec9d968eec9d968695122db
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1468382185}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1405,12 +1483,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 446f5468726f7700000000000069735468726f776e000000000000
+        byteData: 446f5468726f7700000000000069735468726f776e0000000000008d21353ed6d5553f179c513f00000000000000000000000000000000000000803f000000010000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000001f000000170000000f00000001000000
+        paramDataType: 1f000000170000000f000000010000001f000000170000000f00000001000000140000001900000019000000110000001100000001000000
         paramName:
         - eventTarget
         - sendEvent
@@ -1420,8 +1498,14 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 0000000000000000070000000c000000010000000d000000150000001a000000
-        paramByteDataSize: 0000000007000000050000000100000000000000080000000500000001000000
+        - gameObject
+        - mainColor
+        - gradientColor
+        - useGradient
+        - commit
+        - everyframe
+        paramDataPos: 0000000000000000070000000c000000010000000d000000150000001a000000000000001b0000002c0000003d0000003f00000041000000
+        paramByteDataSize: 0000000007000000050000000100000000000000080000000500000001000000000000001100000011000000020000000200000001000000
     events:
     - name: Complete
       isSystemEvent: 0
@@ -1473,17 +1557,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &225319753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 225319750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ee8d086db6e044dbc9a6847f6f7f4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &427151217
 Mesh:
   m_ObjectHideFlags: 0
@@ -2678,7 +2751,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
@@ -2836,8 +2909,8 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.Tk2dSpriteSetId
         - HutongGames.PlayMaker.Actions.SetIsKinematic
         - HutongGames.PlayMaker.Actions.SetRigidBodyConstraints
-        - HutongGames.PlayMaker.Actions.AddTorque
         - HutongGames.PlayMaker.Actions.AddForce
+        - HutongGames.PlayMaker.Actions.AddTorque
         customNames:
         - 
         - 
@@ -2846,8 +2919,8 @@ MonoBehaviour:
         - 
         actionEnabled: 0101010101
         actionIsOpen: 0101010101
-        actionStartIndex: 0000000003000000050000000c00000014000000
-        actionHashCodes: 4818deb01cc678f6229a5a7867af5280e319600b
+        actionStartIndex: 0000000003000000050000000c00000015000000
+        actionHashCodes: 4818deb01cc678f6229a5a78e319600b67af5280
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2906,12 +2979,12 @@ MonoBehaviour:
           value: queen throw
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000010001000100000000000000000000000000000001000000000000000000000000c843000000000000000000000000000000000000000000000100000000000000000000000001000016c40000001644000000000000000000000000000000
+        byteData: 00000000000000000000000100010001000000000000000000000000000000010000000000000000000000000100007ac4000000c84300000000000000000000000000000000000000000000000000000001000000000000000000000000164500000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001000000012000000140000001100000014000000110000001100000011000000110000001100000011000000140000001c0000000f0000000f0000000f000000070000000700000001000000140000001c0000001c0000000f0000000f0000000f000000070000000700000001000000
+        paramDataType: 140000001000000012000000140000001100000014000000110000001100000011000000110000001100000011000000140000001c0000001c0000000f0000000f0000000f000000070000000700000001000000140000001c0000000f0000000f0000000f000000070000000700000001000000
         paramName:
         - gameObject
         - spriteID
@@ -2926,14 +2999,6 @@ MonoBehaviour:
         - freezeRotationY
         - freezeRotationZ
         - gameObject
-        - vector
-        - x
-        - y
-        - z
-        - space
-        - forceMode
-        - everyFrame
-        - gameObject
         - atPosition
         - vector
         - x
@@ -2942,8 +3007,16 @@ MonoBehaviour:
         - space
         - forceMode
         - everyFrame
-        paramDataPos: 00000000000000000000000001000000050000000200000007000000090000000b0000000d0000000f00000011000000030000001300000020000000250000002a0000002f000000330000003700000004000000380000004500000052000000570000005c000000610000006500000069000000
-        paramByteDataSize: 000000000500000000000000000000000200000000000000020000000200000002000000020000000200000002000000000000000d000000050000000500000005000000040000000400000001000000000000000d0000000d000000050000000500000005000000040000000400000001000000
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - forceMode
+        - everyFrame
+        paramDataPos: 00000000000000000000000001000000050000000200000007000000090000000b0000000d0000000f000000110000000300000013000000200000002d00000032000000370000003c0000004000000044000000040000004500000052000000570000005c000000610000006500000069000000
+        paramByteDataSize: 000000000500000000000000000000000200000000000000020000000200000002000000020000000200000002000000000000000d0000000d000000050000000500000005000000040000000400000001000000000000000d000000050000000500000005000000040000000400000001000000
     events:
     - name: isThrown
       isSystemEvent: 0
