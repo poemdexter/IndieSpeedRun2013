@@ -780,6 +780,7 @@ MonoBehaviour:
     - queen
     - king happy
     - king hit on head
+    - sword
     spriteTextureGUIDs:
     - 7c09b2abe2088874cbfa26a7cdd6a8e1
     - 8c4aa471511a64541939bc959e74eb4b
@@ -845,6 +846,7 @@ MonoBehaviour:
     - c20cd9b1975d9cf46b6f264efbc68612
     - 93615d2167218774798807808e868a85
     - e3a99b9bada9e4f4087637ed4a9e4b3d
+    - 82e82e2b36fc35448ba0e4eb0fd02488
     spriteTextureTimeStamps:
     - 1379195444
     - 1379195442
@@ -910,6 +912,7 @@ MonoBehaviour:
     - 1379260564
     - 1379267980
     - 1379271594
+    - 1379875792.32976
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
